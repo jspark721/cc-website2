@@ -19,3 +19,13 @@ function showLine() {
 setTimeout(showLogo(), 7000);
 setTimeout(showSubtitle(), 22000);
 setTimeout(showLine(), 90000);
+
+
+window.onscroll = function() {
+    let heroSection = document.getElementById('hero');
+    if ( window.pageYOffset > 300 ) {
+        line.classList.add("fixed");
+    } else {
+      return console.log('nothing happened');
+    }
+}

@@ -13,19 +13,25 @@
 </head>
 
 <body>
-  <div id="page-border"></div>
+  <div id="page-border-top"></div>
+  <div id="page-border-right"></div>
+  <div id="page-border-bottom"></div>
+  <div id="page-border-left"></div>
   <section class="hero-container">
     <!-- <div class="logo">
       <img src="assets/cc-logo-sm-orange.png" alt="crispy chicken small logo"/>
     </div> -->
-    <div class="hero--textarea">
+    <div id="hero" class="hero--textarea">
       <img id="logo-main" src="assets/cc-logo-main-orange.png" alt="crispy chicken main logo" />
       <h2 id="hero-subtitle">we bring in-house quality service without the big agency price-tag</h2>
       <div id="hero--line"><p class="p-scroll">scroll</p></div>
     </div>
   </section>
-  <section class="background-container">
-    <div class="background--image"></div>
+  <section class="video-container">
+    <video autoplay muted loop id="hero-video">
+      <source src="assets/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video--overlay">
   </section>
   <section class="client-container">
     <div class="client--textarea">
@@ -43,8 +49,9 @@
     <div class="hero-title-line"></div>
     <h3 class="about--bigtitle">We know what’s up<span>.</span></h3>
   </section>
-    <!--
+
   <section class="work-container">
+    <div class="overlay"></div>
     <div class="work-video--grid">
       <div class="work-video--item">
         <div class="work-video--thumbnail"></div>
@@ -120,7 +127,7 @@
       <p class="sm-cap">© copyright crispy chicken 2019. all rights reserved |
       web design + development by <a class="a-sm" href="https://julieloves.co">Julie Park</a></p>
     </div>
-  </footer> -->
+  </footer>
 
 
   <script src="js/script.js"></script>

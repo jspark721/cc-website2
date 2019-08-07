@@ -79,24 +79,57 @@ button {
   padding: 15px;
   background: $white;
   border: none;
+  z-index: 5;
 }
 
-#page-border {
+#page-border-top {
   width: 100%;
-  height: 100%;
-  background: transparent;
+  height: 15px;
+  background: $orange;
   position: fixed;
   z-index: 5;
-  border: 15px solid $orange;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
+
+#page-border-bottom {
+  width: 100%;
+  height: 15px;
+  background: $orange;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+}
+#page-border-left {
+  height: 100%;
+  width: 15px;
+  background: $orange;
+  position: fixed;
+  z-index: 5;
+}
+#page-border-right {
+  height: 100%;
+  width: 15px;
+  background: $orange;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+}
+
+// #page-border {
+//   width: 100%;
+//   height: 100%;
+//   background: transparent;
+//   position: fixed;
+//   z-index: 5;
+//   border: 15px solid $orange;
+//   box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+// }
 
 .hero-container {
   width: 100%;
   height: 100vh;
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +151,7 @@ button {
 
 .hero--textarea {
   position: absolute;
+  z-index: -1;
   width: 90%;
   height: 80%;
   display: flex;
@@ -161,6 +195,7 @@ button {
 }
 
 .p-scroll {
+  position: fixed;
   text-transform: uppercase;
   font-size: .5em;
   letter-spacing: 2px;
@@ -173,6 +208,30 @@ button {
 
 .bounce {
   animation: bounce 2s ease-in infinite;
+}
+
+.video-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+}
+.hero-video--overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba($black, 0.4);
+  width: 100%;
+  height: 100%;
 }
 
 .client-container {
@@ -194,24 +253,6 @@ button {
     letter-spacing: 3px;
   }
 }
-
-.background-container {
-  width: 100%;
-  height: 70vh;
-  position: relative;
-}
-
-.background--image {
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  width: 120%;
-  height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1554774853-7f03caeb4b15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2022&q=80');
-  background-size: cover;
-  background-position: center;
-}
-
 .client--textarea {
   position: absolute;
   width: 100%;
@@ -225,10 +266,14 @@ button {
   position: relative;
   width: 100%;
   height: 85vh;
-  background: $orange;
+  background: $lightorange;
   .hero-title-line {
-    background: $lightorange;
+    background: $orange;
     margin-bottom: 30px;
+    width: 50px;
+    height: 7px;
+    margin-left: 7.5%;
+    margin-top: 25px;
   }
   h1 {
     padding-top: 75px;
@@ -237,7 +282,7 @@ button {
     font-size: 5em;
     line-height: 1.2em;
     span {
-      color: $lightorange;
+      color: $orange;
     }
   }
   h2 {
@@ -260,6 +305,7 @@ button {
 
 .about--bigtitle {
   position: absolute;
+  z-index: 5;
   left: 7%;
   bottom: -50px;
   font-size: 5em;
@@ -269,260 +315,264 @@ button {
   }
 }
 
-// .work-container {
-//   position: relative;
-//   width: 100%;
-//   height: 90vh;
-// }
-//
-// .work-video--grid {
-//   display: grid;
-//   grid-template-columns: repeat(3, auto);
-//   grid-gap: 10px;
-//   width: 86%;
-//   height: 55%;
-//   position: absolute;
-//   left: 7%;
-//   top: 20%;
-// }
-//
-// .work-video--item {
-//   position: relative;
-//   transition: $ease;
-//   z-index: 0;
-//   &:hover {
-//     transform: scale(1.05);
-//     z-index: 3;
-//     background: $white;
-//     box-shadow: 2px 2px 15px rgba($black, .4);
-//     cursor: pointer;
-//     border: none;
-//   }
-// }
-//
-// .work-video--thumbnail {
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   height: 45%;
-//   background: rgba($black, .7);
-// }
-// .work-video--textarea {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 55%;
-//   background: rgba($white, .8);
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   // align-items: flex-start;
-//   p, h3, button{
-//     margin-left: 10%;
-//   }
-// }
-//
-// .work-video--btn {
-//   margin-top: 15px;
-//   align-self: flex-start;
-//   padding: 10px;
-// }
-//
-// .work-container--main-btn {
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: flex-end;
-//   button {
-//     margin-bottom: 8%;
-//   }
-// }
-//
-// .services-container {
-//   width: 100%;
-//   height: 100vh;
-//   background: $white;
-//   position: relative;
-// }
-//
-// .services--left {
-//   position: absolute;
-//   width: 48%;
-//   height: 100%;
-//   h1 {
-//     margin-top: 15%;
-//     color: $orange;
-//     font-size: 5em;
-//     line-height: 1em;
-//     text-align: right;
-//   }
-//   h2 {
-//     text-align: right;
-//     margin-top: 340px;
-//     font-size: 2em;
-//     span {
-//       color: $orange;
-//     }
-//   }
-// }
-//
-// .services--line {
-//   position: absolute;
-//   right: 15px;
-//   width: 5px;
-//   background: $orange;
-//   height: 300px;
-//   margin-top: 20px;
-// }
-// .services--right {
-//   position: absolute;
-//   width: 50%;
-//   height: 100%;
-//   right: 0;
-// }
-//
-// .services--cclogo {
-//   position: absolute;
-//   width: 80%;
-//   min-width: 400px;
-//   top: 100px;
-//   right: 10%;
-// }
-//
-// .services--menu {
-//   position: absolute;
-//   bottom: 10%;
-//   right: 12%;
-//   width: 80%;
-//   height: 40%;
-//   background: $orange;
-//   ul {
-//     margin: 30px 0;
-//     list-style-type: none;
-//     font-size: 2.5em;
-//     font-family: $header;
-//     color: $white;
-//   }
-// }
-//
-// .arrow-lg {
-//   display: flex;
-//   color: rgba($white, .5);
-//   position: absolute;
-//   right: 20px;
-//   bottom: 10px;
-//   p {
-//     font-size: .7em;
-//     margin-top: 26px;
-//     margin-right: 8px;
-//     color: rgba($white, .5);
-//   }
-//   i {
-//     cursor: pointer;
-//     font-size: 4em;
-//     transition: $ease;
-//     &:hover {
-//       transition: $ease;
-//       color: $white;
-//       transform: scale(1.1);
-//     }
-//   }
-// }
-//
-// .contact-container {
-//   position: relative;
-//   background: url('../assets/la-bg.png');
-//   background-position: top;
-//   background-attachment: fixed;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   height: 70vh;
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .overlay {
-//   position: absolute;
-//   background: rgba($black, .5);
-//   width: 100%;
-//   height: 100%;
-// }
-// .contact--text {
-//   margin-left: 7%;
-//   color: $white;
-//   position: absolute;
-//   h1 {
-//     font-size: 5.5em;
-//   }
-//   span {
-//     color: $lightorange;
-//   }
-//   button {
-//     margin-top: 15px;
-//     margin-left: 10px;
-//   }
-// }
-//
-//
-// footer {
-//   position: relative;
-//   background: $orange;
-//   width: 100%;
-//   height: 35vh;
-// }
-//
-// .footer-container {
-//   position: relative;
-//   height: 100%;
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   p {
-//     color: rgba($white, .8);
-//     text-align: center;
-//     font-size: .8em;
-//     margin: 0;
-//   }
-//   .sm-cap {
-//     font-size: .7em;
-//     bottom: 10px;
-//     position: absolute;
-//     color: $redorange;
-//   }
-// }
-//
-// .a-sm {
-//   color: $lightorange;
-//   font-weight: 800;
-//   font-size: 1.1em;
-// }
-// .footer--logo {
-//   width: 50px;
-//   opacity: .7;
-//   margin-bottom: 15px;
-// }
-//
-// .social-icons {
-//   list-style-type: none;
-//   margin-top: 25px;
-//   padding: 0;
-//   li {
-//     display: inline;
-//   }
-//   a {
-//     color: $white;
-//     font-size: 1.3em;
-//     padding: 20px;
-//     &:hover {
-//       font-size: 1.5em;
-//       color: $redorange;
-//     }
-//   }
-// }
+.work-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('../assets/la-bg.png');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.work-video--grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  width: 86%;
+  height: 55%;
+  position: absolute;
+  left: 7%;
+  top: 20%;
+}
+
+.work-video--item {
+  position: relative;
+  transition: $ease;
+  z-index: 0;
+  &:hover {
+    transform: scale(1.05);
+    z-index: 3;
+    background: $white;
+    box-shadow: 2px 2px 15px rgba($black, .4);
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.work-video--thumbnail {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45%;
+  background: rgba($black, .7);
+}
+.work-video--textarea {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  background: rgba($white, .8);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // align-items: flex-start;
+  p, h3, button{
+    margin-left: 10%;
+  }
+}
+
+.work-video--btn {
+  margin-top: 15px;
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.work-container--main-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  button {
+    margin-bottom: 8%;
+  }
+}
+
+.services-container {
+  width: 100%;
+  height: 100vh;
+  background: $white;
+  position: relative;
+}
+
+.services--left {
+  position: absolute;
+  width: 48%;
+  height: 100%;
+  h1 {
+    margin-top: 15%;
+    color: $orange;
+    font-size: 5em;
+    line-height: 1em;
+    text-align: right;
+  }
+  h2 {
+    text-align: right;
+    margin-top: 340px;
+    font-size: 2em;
+    span {
+      color: $orange;
+    }
+  }
+}
+
+.services--line {
+  position: absolute;
+  right: 15px;
+  width: 5px;
+  background: $orange;
+  height: 300px;
+  margin-top: 20px;
+}
+.services--right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+
+.services--cclogo {
+  position: absolute;
+  width: 80%;
+  min-width: 400px;
+  top: 100px;
+  right: 10%;
+}
+
+.services--menu {
+  position: absolute;
+  bottom: 10%;
+  right: 12%;
+  width: 80%;
+  height: 40%;
+  background: $orange;
+  ul {
+    margin: 30px 0;
+    list-style-type: none;
+    font-size: 2.5em;
+    font-family: $header;
+    color: $white;
+  }
+}
+
+.arrow-lg {
+  display: flex;
+  color: rgba($white, .5);
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  p {
+    font-size: .7em;
+    margin-top: 26px;
+    margin-right: 8px;
+    color: rgba($white, .5);
+  }
+  i {
+    cursor: pointer;
+    font-size: 4em;
+    transition: $ease;
+    &:hover {
+      transition: $ease;
+      color: $white;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.contact-container {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1554774853-7f03caeb4b15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2322&q=80');
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba($black, .5);
+  width: 100%;
+  height: 100%;
+}
+.contact--text {
+  margin-left: 7%;
+  color: $white;
+  position: absolute;
+  h1 {
+    font-size: 5.5em;
+  }
+  span {
+    color: $lightorange;
+  }
+  button {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+}
+
+
+footer {
+  position: relative;
+  background: $orange;
+  width: 100%;
+  height: 35vh;
+}
+
+.footer-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    color: rgba($white, .8);
+    text-align: center;
+    font-size: .8em;
+    margin: 0;
+  }
+  .sm-cap {
+    font-size: .7em;
+    bottom: 10px;
+    position: absolute;
+    color: $redorange;
+  }
+}
+
+.a-sm {
+  color: $lightorange;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+.footer--logo {
+  width: 50px;
+  opacity: .7;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  list-style-type: none;
+  margin-top: 25px;
+  padding: 0;
+  li {
+    display: inline;
+  }
+  a {
+    color: $white;
+    font-size: 1.3em;
+    padding: 20px;
+    &:hover {
+      font-size: 1.5em;
+      color: $redorange;
+    }
+  }
+}
 
 @keyframes bounce {
   50% {
