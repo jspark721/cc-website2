@@ -220,6 +220,7 @@ button {
 .work-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
   width: 86%;
   height: 55%;
   position: absolute;
@@ -229,8 +230,7 @@ button {
 .work-video--item {
   position: relative;
   transition: all 0.3s ease;
-  z-index: 0;
-  border: 0.5px solid #ffffff; }
+  z-index: 0; }
   .work-video--item:hover {
     transform: scale(1.05);
     z-index: 3;

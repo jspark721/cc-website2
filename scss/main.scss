@@ -254,6 +254,7 @@ button {
 .work-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
   width: 86%;
   height: 55%;
   position: absolute;
@@ -265,7 +266,6 @@ button {
   position: relative;
   transition: $ease;
   z-index: 0;
-  border: 0.5px solid $white;
   &:hover {
     transform: scale(1.05);
     z-index: 3;
