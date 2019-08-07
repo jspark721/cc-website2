@@ -1,3 +1,3 @@
-# cc-website
-Web Design + Development for Crispy Chicken
+# cc-website2
+Crispy Chicken Website Design 2
 August 2019
