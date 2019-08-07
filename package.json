@@ -2,7 +2,7 @@
   "name": "ccdevdesign",
   "version": "1.0.0",
   "description": "Website Design + Development for Crispy Chicken",
-  "main": "indexß.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
