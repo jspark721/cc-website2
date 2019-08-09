@@ -266,6 +266,7 @@ button {
   position: relative;
   width: 100%;
   height: 85vh;
+  min-height: 775px;
   background: $lightorange;
   .hero-title-line {
     background: $orange;
@@ -318,7 +319,7 @@ button {
 .work-container {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 60vh;
   background: url('../assets/la-bg.png');
   background-position: top;
   background-size: cover;
@@ -328,17 +329,16 @@ button {
 .work-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 10px;
-  width: 86%;
-  height: 55%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 7%;
-  top: 20%;
+  top: 0;
 }
 
 .work-video--item {
   position: relative;
   transition: $ease;
+  border-right: 1px solid $white;
   z-index: 0;
   &:hover {
     transform: scale(1.05);
@@ -380,18 +380,19 @@ button {
 
 .work-container--main-btn {
   width: 100%;
-  height: 100%;
+  height: 123%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   button {
     margin-bottom: 8%;
+    z-index: 4;
   }
 }
 
 .services-container {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background: $white;
   position: relative;
 }
