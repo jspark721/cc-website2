@@ -1,9 +1,14 @@
 @import 'variables';
 @import 'navigation';
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   margin: 0;
   font-family: $body;
+
 }
 #page-load {
   background: $orange;
@@ -12,11 +17,10 @@ body {
   width: 100vw;
   height: 100vh;
   opacity: 1;
-  transition: 4s opacity;
+  transition: 5s opacity;
 }
 .fade {
   opacity: 0 !important;
-  z-index: -2;
 }
 h1 {
   font-family: $header;

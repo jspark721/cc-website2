@@ -110,6 +110,9 @@
   .nav--number:hover {
     text-decoration: none; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 body {
   margin: 0;
   font-family: "proxima-nova", sans-serif; }
@@ -121,11 +124,10 @@ body {
   width: 100vw;
   height: 100vh;
   opacity: 1;
-  transition: 4s opacity; }
+  transition: 5s opacity; }
 
 .fade {
-  opacity: 0 !important;
-  z-index: -2; }
+  opacity: 0 !important; }
 
 h1 {
   font-family: "Oswald", sans-serif;

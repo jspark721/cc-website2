@@ -25,6 +25,10 @@ setTimeout(function() {
   homepageLogo.style.opacity = '1';
   homepageLogo.style.transform = 'translateY(-20px)';
 }, 700);
+setTimeout(function() {
+  document.getElementById('page-load').style.zIndex = '-10';
+}, 1700);
+
 
 //menu navbar function
 let body = document.getElementsByTagName("BODY")[0];
