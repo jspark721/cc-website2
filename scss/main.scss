@@ -216,32 +216,101 @@ button {
   box-shadow: none;
 }
 
-.client-container {
+.square-container {
+  position: relative;
+
+}
+
+.work-container {
   position: relative;
   width: 100%;
-  height: 30vh;
-  background: $redorange;
-  h1 {
-    margin-left: 7%;
-    color: $white;
-    font-size: 2em;
-  }
-  p {
-    order: 2;
-    margin-left: auto;
-    margin-right: 7%;
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
+  height: 70vh;
+  background: url('../assets/la-bg.png');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.client--textarea {
-  position: absolute;
+
+.work-video--grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   width: 100%;
   height: 100%;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.work-video--item {
+  position: relative;
+  transition: $ease;
+  border-right: 1px solid $white;
+  z-index: 0;
+  &:hover {
+    transform: scale(1.05);
+    z-index: 3;
+    background: $white;
+    box-shadow: 2px 2px 15px rgba($black, .4);
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.work-video--thumbnail {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 55%;
+  background: rgba($black, .7);
+  overflow: hidden;
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+  }
+}
+.work-video--textarea {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  background: rgba($white, .8);
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // align-items: flex-start;
+  p, h3, button{
+    margin-left: 10%;
+    margin-right: 7%;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .sm-cap span{
+    background: $lightorange;
+    padding: 5px;
+  }
+}
+
+.work-video--btn {
+  margin-top: 15px;
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.work-container--main-btn {
+  width: 100%;
+  height: 123%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  button {
+    margin-bottom: 8%;
+    z-index: 4;
+  }
 }
 
 .about-container {
@@ -298,79 +367,6 @@ button {
   }
 }
 
-.work-container {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  background: url('../assets/la-bg.png');
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.work-video--grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-
-.work-video--item {
-  position: relative;
-  transition: $ease;
-  border-right: 1px solid $white;
-  z-index: 0;
-  &:hover {
-    transform: scale(1.05);
-    z-index: 3;
-    background: $white;
-    box-shadow: 2px 2px 15px rgba($black, .4);
-    cursor: pointer;
-    border: none;
-  }
-}
-
-.work-video--thumbnail {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 45%;
-  background: rgba($black, .7);
-}
-.work-video--textarea {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 55%;
-  background: rgba($white, .8);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // align-items: flex-start;
-  p, h3, button{
-    margin-left: 10%;
-  }
-}
-
-.work-video--btn {
-  margin-top: 15px;
-  align-self: flex-start;
-  padding: 10px;
-}
-
-.work-container--main-btn {
-  width: 100%;
-  height: 123%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  button {
-    margin-bottom: 8%;
-    z-index: 4;
-  }
-}
 
 .services-container {
   width: 100%;
@@ -557,8 +553,50 @@ footer {
   }
 }
 
-@keyframes bounce {
-  50% {
-     transform: translateY(-25px);
+@media screen and (min-width: 1400px) {
+  .work-video--thumbnail {
+    height: 60%;
+  }
+  .work-video--textarea {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .work-video--thumbnail {
+    height: 50%;
+  }
+  .work-video--textarea {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .work-video--thumbnail {
+    height: 45%;
+  }
+  .work-video--textarea {
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work-container {
+    height: 100vh;
+  }
+  .work-video--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .work-video--thumbnail {
+    width: 50%;
+    height: 100%;
+  }
+  .work-video--textarea {
+    width: 50%;
+    height: 100%;
+    right: 0;
+  }
+  .work-video--item {
+    border-top: 1px solid $white;
   }
 }
