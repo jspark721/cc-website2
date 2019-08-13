@@ -61,18 +61,14 @@
     <!-- Use a button to pause/play the video with JavaScript -->
     <button id="video-btn" onclick="playPause()">pause <i class="fas fa-pause"></i></button>
   </section>
-  <section class="square-container">
-    <div class="square-grid">
 
-    </div>
-  </section>
 
   <section class="work-container">
     <div class="overlay"></div>
     <div class="work-video--grid">
       <div class="work-video--item">
         <div class="work-video--thumbnail">
-          <video muted loop id="hero-video">
+          <video muted loop class="work-video">
             <source src="assets/work-vid1.mp4" type="video/mp4">
           </video>
         </div>
@@ -84,7 +80,7 @@
       </div>
       <div class="work-video--item">
         <div class="work-video--thumbnail">
-          <video muted loop id="hero-video">
+          <video muted loop class="work-video">
             <source src="assets/work-vid2.mp4" type="video/mp4">
           </video>
         </div>
@@ -168,7 +164,10 @@
     </div>
   </footer>
 
-
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 

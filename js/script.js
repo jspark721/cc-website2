@@ -52,3 +52,12 @@ function closeMenu() {
   menuIcon.style.transform = 'translateY(0)';
   closeIcon.style.transform = 'translateY(-100px)';
 }
+
+$(document).ready(function () {
+    $(".work-video--item").hover(function () {
+        $('.work-video--thumbnail').children("video")[0].play();
+    }, function () {
+        var el = $('.work-video--thumbnail').children("video")[0];
+        el.pause();
+    });
+});
