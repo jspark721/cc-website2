@@ -5,7 +5,19 @@ body {
   margin: 0;
   font-family: $body;
 }
-
+#page-load {
+  background: $orange;
+  z-index: 20;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: 4s opacity;
+}
+.fade {
+  opacity: 0 !important;
+  z-index: -2;
+}
 h1 {
   font-family: $header;
   text-transform: uppercase;

@@ -14,14 +14,17 @@ function playPause() {
 }
 
 //landing page animation
+
 let homepageLogo = document.getElementById('logo-main');
 
-
+document.addEventListener("DOMContentLoaded", function(e) {
+  document.getElementById('page-load').classList.add('fade');
+});
 
 setTimeout(function() {
   homepageLogo.style.opacity = '1';
   homepageLogo.style.transform = 'translateY(-20px)';
-}, 1000);
+}, 700);
 
 //menu navbar function
 let body = document.getElementsByTagName("BODY")[0];
