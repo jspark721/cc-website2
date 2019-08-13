@@ -1,25 +1,27 @@
-let homepageLogo = document.getElementById('logo-main');
-let subtitle = document.getElementById('hero-subtitle');
-let line = document.getElementById('hero--line');
+//homepage video button
+let video = document.getElementById("hero-video");
+let btn = document.getElementById("video-btn");
 
-function showLogo() {
+// pause and play the video
+function playPause() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "pause <i class='fas fa-pause'></i>";
+  } else {
+    video.pause();
+    btn.innerHTML = "play <i class='fas fa-play'></i>";
+  }
+}
+
+//landing page animation
+let homepageLogo = document.getElementById('logo-main');
+
+
+
+setTimeout(function() {
   homepageLogo.style.opacity = '1';
   homepageLogo.style.transform = 'translateY(-20px)';
-}
-
-function showSubtitle() {
-  subtitle.style.opacity = '1';
-  subtitle.style.transform = 'translateX(0)';
-}
-
-function showLine() {
-  line.style.opacity = '1';
-}
-
-setTimeout(showLogo(), 7000);
-setTimeout(showSubtitle(), 22000);
-setTimeout(showLine(), 90000);
-
+}, 1000);
 
 //menu navbar function
 let body = document.getElementsByTagName("BODY")[0];
