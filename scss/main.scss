@@ -195,7 +195,7 @@ button {
   position: fixed;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
 }
@@ -216,11 +216,15 @@ button {
   box-shadow: none;
 }
 
-.square-container {
-  position: relative;
-
+.swipe-up {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  img {
+    width: 100%;
+    z-index: 20;
+  }
 }
-
 .work-container {
   position: relative;
   width: 100%;
