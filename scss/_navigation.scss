@@ -83,15 +83,18 @@
   height: 100vh;
   background: $orange;
   z-index: 9;
-  transition: $ease-slow;
+  transition: $ease-out;
   transform: translateY(-100%);
   opacity: 0;
+  overflow-y: scroll;
 }
 
 .nav--main-content {
   height: 80%;
   width: 80%;
-  margin-top: 12%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: 2%;
 }
 
 .nav--main-list {
