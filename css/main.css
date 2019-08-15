@@ -328,15 +328,17 @@ button {
 .work-video--item {
   position: relative;
   transition: all 0.3s ease;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #f97304;
+  border-bottom: 1px solid #f97304;
   z-index: 0; }
   .work-video--item:hover {
     transform: scale(1.05);
     z-index: 3;
     background: #ffffff;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    border: none; }
+    border: none;
+    border: 4px solid #f97304; }
 
 .work-video--thumbnail {
   position: absolute;
@@ -357,7 +359,7 @@ button {
   bottom: 0;
   width: 100%;
   height: 45%;
-  background: #f97304;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -367,7 +369,7 @@ button {
   .work-video--textarea p {
     margin-bottom: 5px; }
   .work-video--textarea .sm-cap span {
-    background: rgba(251, 147, 52, 0.6);
+    background: #fb9334;
     padding: 5px; }
 
 .work-video--btn {
@@ -378,7 +380,7 @@ button {
 
 .services-container {
   width: 100%;
-  height: 110vh;
+  height: 115vh;
   background: #ffffff;
   position: relative;
   display: flex;
@@ -394,7 +396,7 @@ button {
   background: #ffffff; }
   .services--header h1 {
     margin-left: 7.5%;
-    margin-top: 9%;
+    margin-top: 7%;
     color: #f97304;
     font-size: 5em;
     line-height: 1em; }
@@ -405,23 +407,60 @@ button {
       color: #f97304; }
 
 .services--grid {
-  margin-top: 15%;
+  margin-top: 10%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(200px, auto);
-  width: 82%;
+  width: 84%;
   height: 60%;
-  grid-gap: 2px; }
+  grid-gap: 20px; }
 
 .services--item {
   background: #f97304;
+  overflow: hidden;
+  cursor: pointer; }
+
+.item-text {
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .services--item h3 {
-    color: #ffffff; }
-  .services--item img {
-    width: 150px; }
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%; }
+  .item-text h3 {
+    color: #ffffff;
+    text-align: center; }
+  .item-text a {
+    background: #ffffff;
+    padding: 5px;
+    transition: all 0.3s ease; }
+    .item-text a h3 {
+      color: #f97304; }
+    .item-text a:hover {
+      text-decoration: none;
+      font-size: 1.1em; }
+
+.services--item:hover .services--item-overlay {
+  transform: translateY(-100%); }
+
+.services--item-overlay {
+  background: #fb9334;
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: all 0.3s ease-out; }
+  .services--item-overlay p {
+    padding: 25px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: "Oswald", sans-serif; }
 
 .arrow-lg {
   display: flex;
@@ -446,44 +485,59 @@ button {
 .about-container {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 95vh;
   min-height: 775px;
   background: #fb9334; }
-  .about-container .hero-title-line {
+
+.about--redbg {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #d44206; }
+
+.about--redbg2 {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #d44206;
+  bottom: 0; }
+
+.logo-bg {
+  position: absolute;
+  top: 0;
+  opacity: .1;
+  right: 0;
+  width: 60%;
+  z-index: 0; }
+
+.about--textarea {
+  position: absolute;
+  top: 9%; }
+  .about--textarea .hero-title-line {
     background: #f97304;
     margin-bottom: 30px;
     width: 50px;
     height: 7px;
     margin-left: 7.5%;
     margin-top: 25px; }
-  .about-container h1 {
-    padding-top: 75px;
+  .about--textarea h1 {
     margin-left: 7%;
     color: #ffffff;
     font-size: 5em;
     line-height: 1.2em; }
-    .about-container h1 span {
+    .about--textarea h1 span {
       color: #f97304; }
-  .about-container h2 {
+  .about--textarea h2 {
     margin: 0 7.5%;
     color: #ffffff;
     font-weight: 400;
     line-height: 1.3em;
-    font-size: 1.3em; }
-
-.logo-bg {
-  position: absolute;
-  top: -30%;
-  opacity: .1;
-  right: 0;
-  width: 60%;
-  z-index: 0; }
+    font-size: 1.5em; }
 
 .about--bigtitle {
   position: absolute;
   z-index: 5;
   left: 7%;
-  bottom: -50px;
   font-size: 5em;
   color: #ffffff; }
   .about--bigtitle span {
@@ -500,6 +554,12 @@ button {
   height: 70vh;
   display: flex;
   align-items: center; }
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%; }
 
 .contact--text {
   margin-left: 7%;
