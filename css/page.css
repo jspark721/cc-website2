@@ -16,8 +16,8 @@
   height: 40%;
   left: 10%;
   top: 20%;
-  transition-delay: 2s;
-  transition: all .5s ease; }
+  transition-delay: 7s;
+  transition: all 2s ease; }
 
 .page--title h1 {
   font-size: 5em;
