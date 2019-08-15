@@ -1,0 +1,47 @@
+@import url("https://use.typekit.net/rmf2opm.css");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+.page--hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/about-page.jpg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.page--hero-textarea {
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  left: 10%;
+  top: 20%;
+  transition-delay: 2s;
+  transition: all .5s ease; }
+
+.page--title h1 {
+  font-size: 5em;
+  color: #f97304; }
+  .page--title h1 span {
+    color: #01739B; }
+
+.page--title p {
+  color: #01739B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 8px; }
+
+.page--title-sm {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 2px; }
+  .page--title-sm span {
+    background: #f97304;
+    color: #ffffff;
+    padding: 5px; }
+
+.page--about-container {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: #01739B; }
