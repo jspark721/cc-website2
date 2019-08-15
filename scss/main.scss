@@ -634,8 +634,19 @@ footer {
     }
   }
 }
-
 @media screen and (min-width: 1400px) {
+  .work-container {
+    height: 75vh;
+  }
+  .work-video--thumbnail {
+    height: 65%;
+  }
+  .work-video--textarea {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .work-video--thumbnail {
     height: 60%;
   }
