@@ -123,6 +123,9 @@ body {
   margin: 0;
   font-family: "proxima-nova", sans-serif; }
 
+section {
+  min-height: 800px; }
+
 #page-load {
   background: #f97304;
   z-index: 20;
@@ -238,7 +241,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .logo {
   width: 70px;
@@ -275,7 +278,6 @@ button {
   overflow: hidden;
   min-width: 100%;
   min-height: 100%;
-  height: 100vh;
   position: absolute;
   left: 50%;
   /* % of surrounding element */
@@ -349,9 +351,9 @@ button {
   width: 100%;
   height: 55%;
   overflow: hidden; }
-  .work-video--thumbnail video {
-    width: 100%;
-    height: 100%; }
+
+.work-video {
+  width: 100%; }
 
 .work-video--textarea {
   position: absolute;
@@ -522,16 +524,11 @@ button {
   position: relative;
   width: 100%;
   height: 95vh;
-  min-height: 870px;
+  min-height: 850px;
+  max-height: 880px;
   background: #fb9334; }
 
-.about--redbg {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  background: #d44206; }
-
-.about--redbg2 {
+.about--bg {
   position: absolute;
   width: 100%;
   height: 15%;
@@ -544,11 +541,13 @@ button {
   opacity: .1;
   right: 0;
   width: 60%;
-  z-index: 0; }
+  max-width: 870px;
+  z-index: 1; }
 
 .about--textarea {
   position: absolute;
-  top: 9%; }
+  top: 9%;
+  z-index: 2; }
   .about--textarea .hero-title-line {
     background: #f97304;
     margin-bottom: 30px;
@@ -577,7 +576,7 @@ button {
   font-size: 5em;
   color: #ffffff; }
   .about--bigtitle span {
-    color: #fb9334; }
+    color: #f97304; }
 
 .contact-container {
   position: relative;
@@ -615,6 +614,7 @@ footer {
   background: #f97304;
   width: 100%;
   height: 35vh;
+  min-height: 300px;
   padding-bottom: 8px; }
 
 .footer-container {
@@ -661,6 +661,10 @@ footer {
       color: #d44206; }
 
 @media screen and (min-width: 1400px) {
+  .work-container {
+    height: 120vh;
+    max-height: 1200px;
+    background: #d44206; }
   .work-video--thumbnail {
     height: 65%; }
   .work-video--textarea {
