@@ -190,7 +190,6 @@ button {
   transform: translate(-50%, -50%); /* % of current element */
 }
 
-
 .hero-video--overlay {
   position: fixed;
   left: 0;
@@ -208,7 +207,7 @@ button {
   border: 0;
   padding: 10px;
   cursor: pointer;
-  color: $white;
+  color: rgba($orange, .8);
   outline: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -218,7 +217,7 @@ button {
 
 .swipe-up {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 120px;
   img {
     width: 100%;
