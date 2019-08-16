@@ -671,6 +671,8 @@ footer {
     height: 35%; } }
 
 @media screen and (max-width: 1200px) {
+  #hero-video {
+    height: 100vh; }
   .work-video--thumbnail {
     height: 60%; }
   .work-video--textarea {
