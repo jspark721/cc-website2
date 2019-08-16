@@ -319,6 +319,7 @@ button {
   position: relative;
   width: 100%;
   height: 120vh;
+  max-height: 800px;
   background: #d44206; }
 
 .work-video--grid {
@@ -388,7 +389,7 @@ button {
   justify-content: center;
   align-items: flex-end; }
   .work-container--main-btn button {
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     border: 1px solid #000000; }
 
 .services-container {
@@ -635,8 +636,6 @@ footer {
       color: #d44206; }
 
 @media screen and (min-width: 1400px) {
-  .work-container {
-    height: 75vh; }
   .work-video--thumbnail {
     height: 65%; }
   .work-video--textarea {
