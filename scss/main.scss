@@ -4,6 +4,9 @@
 ::-webkit-scrollbar {
     display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -225,44 +228,37 @@ button {
   }
 }
 
-// .break-container {
-//   position: relative;
-//   width: 100%;
-//   height: 20vh;
-//   background: $white;
-// }
 .work-container {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 120vh;
+  background: $redorange;
 }
 
 .work-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 100%;
-  height: 100%;
+  grid-gap: 10px;
+  width: 86%;
+  height: 60%;
   position: absolute;
-  top: 0;
+  left: 7%;
+  top: 18%;
 }
 
 .work-video--item {
   position: relative;
   transition: $ease;
-  border-right: 1px solid $orange;
-  border-bottom: 1px solid $orange;
   z-index: 0;
   &:hover {
     transform: scale(1.05);
     z-index: 3;
     background: $white;
-    box-shadow: 2px 3px 20px rgba($black, .4);
+    box-shadow: 2px 2px 15px rgba($black, .4);
     cursor: pointer;
     border: none;
-    border: 4px solid $orange;
   }
 }
-
 .work-video--thumbnail {
   position: absolute;
   top: 0;
@@ -273,12 +269,8 @@ button {
     width: 100%;
     height: 100%;
   }
-  img {
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-  }
 }
+
 .work-video--textarea {
   position: absolute;
   bottom: 0;
@@ -288,17 +280,23 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // align-items: flex-start;
   p, h3, button{
     margin-left: 10%;
     margin-right: 7%;
   }
+  .sm-cap {
+    font-size: .9em;
+  }
   p {
     margin-bottom: 5px;
+    color: $white;
   }
   .sm-cap span{
-    background: $lightorange;
+    background: $blue;
     padding: 5px;
+  }
+  h3 {
+    line-height: 1.3em;
   }
 }
 
@@ -306,7 +304,18 @@ button {
   margin-top: 15px;
   align-self: flex-start;
   padding: 10px;
-  background: $white;
+}
+
+.work-container--main-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  button {
+    margin-bottom: 7%;
+    border: 1px solid $black;
+  }
 }
 
 .services-container {

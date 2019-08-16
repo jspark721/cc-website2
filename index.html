@@ -57,17 +57,18 @@
     <div id="hero" class="hero--textarea">
       <img id="logo-main" src="assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
     </div>
+    <a href="/#work">
     <div class="swipe-up">
-      <a href="/#work"><img src="assets/SwipeUp.gif" alt="swipe up sticker" /></a>
+      <img src="assets/SwipeUp.gif" alt="swipe up sticker" />
     </div>
+    </a>
     <!-- Use a button to pause/play the video with JavaScript -->
     <button id="video-btn" onclick="playPause()">pause <i class="fas fa-pause"></i></button>
   </section>
 
   <!-- <section class="break-container"></section> -->
-
+  <a name="work"></a>
   <section class="work-container">
-    <a name="work"></a>
     <div class="work-video--grid">
       <div class="work-video--item">
         <div class="work-video--thumbnail">
@@ -95,7 +96,9 @@
       </div>
       <div class="work-video--item">
         <div class="work-video--thumbnail">
-          <img src="assets/work-img3.jpg" alt="baseball picture"/>
+          <video autoplay muted loop id="hero-video">
+            <source src="assets/work-vid3.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="work-video--textarea">
           <p class="sm-cap"><span>Leatherhead Sports</span></p>
@@ -103,6 +106,9 @@
           <button class="work-video--btn">details</button>
         </div>
       </div>
+    </div>
+    <div class="work-container--main-btn">
+      <button class="btn-white">view all work</button>
     </div>
   </section>
 
