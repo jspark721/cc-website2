@@ -586,17 +586,17 @@ button {
     margin-bottom: 30px;
     width: 50px;
     height: 7px;
-    margin-left: 7.5%;
+    margin-left: 8%;
     margin-top: 25px; }
   .about--textarea h1 {
-    margin-left: 7%;
+    margin-left: 7.5%;
     color: #ffffff;
     font-size: 5em;
     line-height: 1.2em; }
     .about--textarea h1 span {
       color: #f97304; }
   .about--textarea h2 {
-    margin: 0 7.5%;
+    margin: 0 8%;
     color: #ffffff;
     font-weight: 400;
     line-height: 1.3em;
@@ -605,7 +605,7 @@ button {
 .about--bigtitle {
   position: absolute;
   z-index: 5;
-  left: 7%;
+  left: 7.5%;
   font-size: 5em;
   color: #ffffff; }
   .about--bigtitle span {
@@ -613,8 +613,8 @@ button {
 
 .contact-container {
   position: relative;
-  background: url("https://images.unsplash.com/photo-1554774853-7f03caeb4b15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2322&q=80");
-  background-position: top;
+  background: url("../assets/home-contact-bg.jpg");
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
