@@ -222,10 +222,9 @@ button {
 
 .swipe-up {
   position: absolute;
-  bottom: 10px;
-  width: 120px;
+  bottom: 0;
   img {
-    width: 100%;
+    width: 120px;
     z-index: 20;
   }
 }

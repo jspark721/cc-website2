@@ -310,10 +310,9 @@ button {
 
 .swipe-up {
   position: absolute;
-  bottom: 10px;
-  width: 120px; }
+  bottom: 0; }
   .swipe-up img {
-    width: 100%;
+    width: 120px;
     z-index: 20; }
 
 .work-container {
@@ -666,9 +665,7 @@ footer {
     max-height: 1200px;
     background: #d44206; }
   .work-video--thumbnail {
-    height: 65%; }
-  .work-video--textarea {
-    height: 35%; } }
+    height: 65%; } }
 
 @media screen and (max-width: 1200px) {
   #hero-video {
