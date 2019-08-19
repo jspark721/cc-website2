@@ -26,11 +26,11 @@
     font-size: 5em;
     color: $orange;
     span {
-      color: $blue;
+      color: $teal;
     }
   }
   p {
-    color: $blue;
+    color: $teal;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-left: 8px;
@@ -42,7 +42,7 @@
   letter-spacing: 2px;
   margin: 0 0 20px 2px;
   span {
-    background: $orange;
+    background: $teal;
     color: $white;
     padding: 5px;
   }
@@ -51,19 +51,84 @@
 .page--about-container {
   position: relative;
   width: 100%;
-  height: 30vh;
-  background: $blue;
+  height: 40vh;
+  background: $redorange;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   h2 {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 2em;
     color: $white;
     span {
       background: $white;
-      color: $blue;
+      color: $redorange;
     }
   }
+}
+
+.page--about-grid-container {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  h3 {
+    color: $teal;
+    margin-top: -15px;
+  }
+}
+
+.about--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+}
+
+.about--grid-item1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background: url('../assets/marcCC.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about--grid-item2 {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12%;
+}
+.about--grid-item3 {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12%;
+  text-align: right;
+}
+.about--grid-item4 {
+  grid-area: 2 / 2 / 3 / 3;
+  background: url('../assets/minaCC.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about--grid-item5 {
+  grid-area: 3 / 1 / 4 / 2;
+  background: url('../assets/ricardoCC.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about--grid-item6 {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12%;
 }

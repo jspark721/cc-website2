@@ -123,9 +123,6 @@ body {
   margin: 0;
   font-family: "proxima-nova", sans-serif; }
 
-section {
-  min-height: 800px; }
-
 #page-load {
   background: #f97304;
   z-index: 20;
@@ -236,6 +233,7 @@ button {
 .hero-container {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -319,7 +317,8 @@ button {
   position: relative;
   width: 100%;
   height: 115vh;
-  background: #d44206; }
+  background: #d44206;
+  min-height: 800px; }
 
 .work-container--title {
   position: absolute;
@@ -419,7 +418,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 800px; }
 
 .services--header {
   position: absolute;

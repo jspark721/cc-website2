@@ -13,9 +13,7 @@ body {
   font-family: $body;
 
 }
-section {
-  min-height: 800px;
-}
+
 #page-load {
   background: $orange;
   z-index: 20;
@@ -139,6 +137,7 @@ button {
 .hero-container {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -234,6 +233,7 @@ button {
   width: 100%;
   height: 115vh;
   background: $redorange;
+  min-height: 800px;
 }
 
 .work-container--title {
@@ -351,6 +351,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 800px;
 }
 
 .services--header {
