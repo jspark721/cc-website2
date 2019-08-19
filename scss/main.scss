@@ -189,7 +189,7 @@ button {
   min-width: 100%;
   min-height: 100%;
   // height: 100vh;
-  position: absolute;
+  position: fixed;
   left: 50%; /* % of surrounding element */
   top: 50%;
   transform: translate(-50%, -50%); /* % of current element */
@@ -232,9 +232,22 @@ button {
 .work-container {
   position: relative;
   width: 100%;
-  height: 120vh;
-  max-height: 800px;
+  height: 115vh;
   background: $redorange;
+}
+
+.work-container--title {
+  position: absolute;
+  width: 100%;
+  padding-top: 80px;
+  z-index: 5;
+  h1 {
+    margin-left: 7.5%;
+    margin-top: 4%;
+    color: $white;
+    font-size: 5em;
+    line-height: 1em;
+  }
 }
 
 .work-video--grid {
@@ -242,10 +255,11 @@ button {
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   width: 86%;
-  height: 60%;
+  height: 55%;
   position: absolute;
+  z-index: 1;
   left: 7%;
-  top: 18%;
+  top: 25%;
 }
 
 .work-video--item {
@@ -293,7 +307,7 @@ button {
     color: $white;
   }
   .sm-cap span{
-    background: $blue;
+    background: $teal;
     padding: 5px;
   }
   h3 {
@@ -305,6 +319,11 @@ button {
   margin-top: 15px;
   align-self: flex-start;
   padding: 10px;
+  transition: $ease;
+  &:hover {
+    background: $teal;
+    color: $white;
+  }
 }
 
 .work-container--main-btn {
@@ -314,8 +333,12 @@ button {
   justify-content: center;
   align-items: flex-end;
   button {
-    margin-bottom: 5.5%;
+    margin-bottom: 7%;
     border: 1px solid $black;
+    &:hover {
+      background: $teal;
+      color: $white;
+    }
   }
 }
 

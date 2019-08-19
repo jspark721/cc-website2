@@ -278,7 +278,7 @@ button {
   overflow: hidden;
   min-width: 100%;
   min-height: 100%;
-  position: absolute;
+  position: fixed;
   left: 50%;
   /* % of surrounding element */
   top: 50%;
@@ -318,19 +318,31 @@ button {
 .work-container {
   position: relative;
   width: 100%;
-  height: 120vh;
-  max-height: 800px;
+  height: 115vh;
   background: #d44206; }
+
+.work-container--title {
+  position: absolute;
+  width: 100%;
+  padding-top: 80px;
+  z-index: 5; }
+  .work-container--title h1 {
+    margin-left: 7.5%;
+    margin-top: 4%;
+    color: #ffffff;
+    font-size: 5em;
+    line-height: 1em; }
 
 .work-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   width: 86%;
-  height: 60%;
+  height: 55%;
   position: absolute;
+  z-index: 1;
   left: 7%;
-  top: 18%; }
+  top: 25%; }
 
 .work-video--item {
   position: relative;
@@ -372,7 +384,7 @@ button {
     margin-bottom: 5px;
     color: #ffffff; }
   .work-video--textarea .sm-cap span {
-    background: #01739B;
+    background: #157070;
     padding: 5px; }
   .work-video--textarea h3 {
     line-height: 1.3em; }
@@ -380,7 +392,11 @@ button {
 .work-video--btn {
   margin-top: 15px;
   align-self: flex-start;
-  padding: 10px; }
+  padding: 10px;
+  transition: all 0.3s ease; }
+  .work-video--btn:hover {
+    background: #157070;
+    color: #ffffff; }
 
 .work-container--main-btn {
   width: 100%;
@@ -389,8 +405,11 @@ button {
   justify-content: center;
   align-items: flex-end; }
   .work-container--main-btn button {
-    margin-bottom: 5.5%;
+    margin-bottom: 7%;
     border: 1px solid #000000; }
+    .work-container--main-btn button:hover {
+      background: #157070;
+      color: #ffffff; }
 
 .services-container {
   width: 100%;
