@@ -390,7 +390,7 @@ button {
   overflow: hidden;
   cursor: pointer;
 }
-.item-text {
+.item-text, .item-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -401,6 +401,9 @@ button {
     color: $white;
     text-align: center;
   }
+}
+
+.item-button {
   a {
     background: $white;
     padding: 5px;
@@ -411,10 +414,6 @@ button {
     &:hover {
       text-decoration: none;
       font-size: 1.1em;
-      background: $blue;
-      h3 {
-        color: $white;
-      }
     }
   }
 }
@@ -443,9 +442,11 @@ button {
 .services--item:hover .services--item-overlay {
   transform: translateY(-100%);
 }
+.services--item:hover .item-text {
+  opacity: 0;
+}
 
 .services--item-overlay {
-  background: $blue;
   height: 100%;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
@@ -462,6 +463,22 @@ button {
     font-size: 1.4em;
     font-family: $header;
   }
+}
+
+.overlay-bg1 {
+  background: linear-gradient(to bottom right, rgba($dark, .1), rgba($teal, .3));
+}
+.overlay-bg2 {
+    background: linear-gradient(to bottom right, rgba($dark, .1), rgba($blue, .3));
+}
+.overlay-bg3 {
+    background: linear-gradient(to bottom right, rgba($dark, .1), rgba($redorange, .3));
+}
+.overlay-bg4 {
+    background: linear-gradient(to bottom right, rgba($dark, .1), rgba($navy, .3));
+}
+.overlay-bg5 {
+    background: linear-gradient(to bottom right, rgba($dark, .1), rgba($lightorange, .3));
 }
 
 .arrow-lg {
