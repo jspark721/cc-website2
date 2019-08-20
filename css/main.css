@@ -443,14 +443,13 @@ button {
 .services--grid {
   margin-top: 10%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  width: 84%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  width: 87%;
   height: 60%;
   grid-gap: 20px; }
 
 .services--item {
-  background: #f97304;
   overflow: hidden;
   cursor: pointer; }
 
@@ -477,23 +476,28 @@ button {
 
 .item1 {
   background-image: url("../assets/services1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-area: 1 / 1 / 2 / 3; }
 
 .item2 {
   background-image: url("../assets/services2.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-area: 1 / 3 / 2 / 5; }
 
 .item3 {
   background-image: url("../assets/services3.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-area: 1 / 5 / 2 / 7; }
 
 .item4 {
   background-image: url("../assets/services4.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-area: 2 / 2 / 3 / 4; }
 
 .item5 {
   background-image: url("../assets/services5.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-area: 2 / 4 / 3 / 6; }
 
 .services--item:hover .services--item-overlay {
   transform: translateY(-100%); }
