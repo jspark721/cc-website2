@@ -82,8 +82,8 @@
   overflow-y: scroll; }
 
 .nav--main-content {
-  height: 80%;
-  width: 80%;
+  height: 60%;
+  width: 100%;
   margin-top: 150px;
   margin-bottom: 150px;
   margin-left: 2%; }
@@ -112,6 +112,32 @@
   vertical-align: middle; }
   .nav--number:hover {
     text-decoration: none; }
+
+.icon-sm {
+  font-size: .5em;
+  color: #d44206;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .icon-sm:hover {
+    color: #157070;
+    font-size: .55em; }
+
+#services--dropdown {
+  list-style: none;
+  margin-top: -20px;
+  transition: all 0.3s ease; }
+  #services--dropdown li {
+    font-size: 0.45em;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+    padding-right: 20px;
+    color: #d44206;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    #services--dropdown li:hover {
+      color: #157070;
+      font-size: .48em; }
 
 ::-webkit-scrollbar {
   display: none; }

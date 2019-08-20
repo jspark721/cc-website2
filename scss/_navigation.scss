@@ -90,8 +90,8 @@
 }
 
 .nav--main-content {
-  height: 80%;
-  width: 80%;
+  height: 60%;
+  width: 100%;
   margin-top: 150px;
   margin-bottom: 150px;
   margin-left: 2%;
@@ -125,5 +125,36 @@
   vertical-align: middle;
   &:hover {
     text-decoration: none;
+  }
+}
+
+.icon-sm {
+  font-size: .5em;
+  color: $redorange;
+  cursor: pointer;
+  transition: $ease;
+  &:hover {
+    color: $teal;
+    font-size: .55em;
+  }
+}
+
+#services--dropdown {
+  list-style: none;
+  margin-top: -20px;
+  transition: $ease;
+  li {
+    font-size: 0.45em;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+    padding-right: 20px;
+    color: $redorange;
+    transition: $ease;
+    cursor: pointer;
+    &:hover {
+      color: $teal;
+      font-size: .48em;
+    }
   }
 }
