@@ -27,7 +27,7 @@
     color: #157070; }
 
 .page--title p {
-  color: #157070;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-left: 8px; }
@@ -150,6 +150,17 @@
   .page--work-hero-container .page--title h1 {
     font-size: 7em; }
 
+#hero-work-video {
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  left: 50%;
+  /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* % of current element */ }
+
 .page--work-grid-container {
   width: 100%;
   display: flex;
@@ -167,10 +178,9 @@
 
 .page--client-item {
   overflow: hidden;
-  cursor: pointer;
-  background: #f97304;
   height: 300px;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  z-index: 4; }
   .page--client-item img {
     height: auto;
     -webkit-filter: brightness(0) invert(1);
