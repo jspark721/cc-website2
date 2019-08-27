@@ -216,7 +216,7 @@
   background: #157070; }
 
 .page--client-desc {
-  margin-top: -10%;
+  margin-top: -5%;
   width: 100%;
   position: relative;
   height: 80vh;
@@ -225,9 +225,8 @@
 .client--desc-textarea {
   position: absolute;
   width: 80%;
-  height: 40%;
-  left: 10%;
-  top: 10%; }
+  height: 100%;
+  left: 10%; }
   .client--desc-textarea .page--title-sm span {
     background: #f97304; }
   .client--desc-textarea h4 {

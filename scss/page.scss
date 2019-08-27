@@ -261,7 +261,7 @@
 }
 
 .page--client-desc {
-  margin-top: -10%;
+  margin-top: -5%;
   width: 100%;
   position: relative;
   height: 80vh;
@@ -270,9 +270,8 @@
 .client--desc-textarea {
   position: absolute;
   width: 80%;
-  height: 40%;
+  height: 100%;
   left: 10%;
-  top: 10%;
   .page--title-sm {
     span {
       background: $orange;
@@ -283,6 +282,12 @@
     font-size: 1.5em;
   }
 }
+// .client--desc-iphone {
+//   position: absolute;
+//   right: 0;
+//   width: 40%;
+//   height: 100%;
+// }
 
 .client--line {
   margin: 30px 0 50px 3px;
