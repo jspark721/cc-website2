@@ -27,10 +27,13 @@
     color: #157070; }
 
 .page--title p {
-  color: #ffffff;
+  color: #157070;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-left: 8px; }
+
+.page--title .p-white {
+  color: #ffffff; }
 
 .page--title-sm {
   text-transform: uppercase;
@@ -143,8 +146,9 @@
 
 .page--work-hero-container {
   position: relative;
-  height: 80vh;
-  width: 100%; }
+  height: 45vh;
+  width: 100%;
+  min-height: 500px; }
   .page--work-hero-container .page--hero-textarea {
     top: 35%; }
   .page--work-hero-container .page--title h1 {
@@ -165,20 +169,19 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 3%;
-  margin-bottom: 17%; }
+  justify-content: center; }
 
 .page--work-grid {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 8%; }
 
 .page--client-item {
   overflow: hidden;
-  height: 300px;
+  height: 280px;
   transition: all 0.3s ease;
   z-index: 4; }
   .page--client-item img {
@@ -239,6 +242,10 @@
   background: #f97304;
   width: 50px; }
 
+@media screen and (min-width: 1300px) {
+  .page--client-item {
+    height: 350px; } }
+
 @media screen and (max-width: 1200px) {
   .page--hero-container {
     background-image: url("../assets/about-page-wide.jpg"); } }
@@ -246,3 +253,19 @@
 @media screen and (max-width: 1000px) {
   .page--hero-container {
     background-image: url("../assets/about-page.jpg"); } }
+
+@media screen and (max-width: 777px) {
+  .page--work-grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 600px) {
+  .page--work-grid {
+    margin-top: 100px; }
+  .page--client-item {
+    height: 200px; } }
+
+@media screen and (max-width: 475px) {
+  .page--work-grid {
+    grid-template-columns: 1fr; }
+  .page--client-item {
+    height: 280px; } }
