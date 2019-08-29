@@ -237,6 +237,90 @@
   width: 50%;
 }
 
+/*client page vh1*/
+.page--client-hero-container2 {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  .page--hero-textarea {
+    top: 45%;
+  }
+  .page--title {
+    h1 {
+      font-size: 7em;
+    }
+  }
+}
+.page--client-desc2 {
+  width: 100%;
+  position: relative;
+  height: 80vh;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client--desc-textarea2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  .page--title-sm {
+    span {
+      background: $orange;
+    }
+  }
+  h4 {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: justify;
+  }
+}
+.client--desc-iphone {
+  margin-right: 5%;
+  height: 100%;
+}
+.iphone-video {
+  // width: 80%;
+  height: 100%;
+}
+
+.client--line {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-left: 3px;
+  height: 5px;
+  background: $redorange;
+  width: 50px;
+}
+
+.work-video--textarea:hover .page-client--item-overlay {
+  transform: translateY(-100%);
+}
+
+.page-client--item-overlay {
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  align-items: center;
+  transform: translateY(0);
+  transition: $ease;
+  p {
+    padding: 20px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: $header;
+  }
+}
+
+
 /*client page*/
 .page--client-hero-container {
   position: relative;
@@ -255,8 +339,12 @@
 .page--client-container {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 700px;
+  height: 80vh;
+  min-height: 600px;
+  .work-video--grid {
+    height: 70%;
+    top: 15%;
+  }
 }
 
 .thumbnail-bg {
@@ -284,19 +372,6 @@
     margin-top: 0;
     font-size: 1.5em;
   }
-}
-// .client--desc-iphone {
-//   position: absolute;
-//   right: 0;
-//   width: 40%;
-//   height: 100%;
-// }
-
-.client--line {
-  margin: 30px 0 50px 3px;
-  height: 5px;
-  background: $orange;
-  width: 50px;
 }
 
 @media screen and (min-width: 1300px) {
