@@ -228,8 +228,7 @@
   .client--desc-textarea2 .page--title-sm span {
     background: #f97304; }
   .client--desc-textarea2 h4 {
-    margin-top: 0;
-    font-size: 1.3em; }
+    font-size: 1.5em; }
 
 .client--desc-iphone {
   margin-right: 5%;
@@ -246,71 +245,99 @@
   background: #157070;
   width: 50px; }
 
-.work-video--item {
+/*client page box grid*/
+.client-video-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  margin-bottom: 10%;
+  margin-top: 5%; }
+
+.client-video--grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  width: 86%;
+  height: 75%;
+  position: absolute;
+  z-index: 1;
+  left: 7%;
+  top: 25%; }
+
+.client-video--item {
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 0; }
+  .client-video--item:hover {
+    transform: scale(1.05);
+    z-index: 3;
+    background: #ffffff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none; }
+
+.client-video--thumbnail {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 55%;
   overflow: hidden; }
 
-.work-video--item:hover .page-client--item-overlay {
-  transform: translateY(0%); }
+.client-video {
+  width: 100%; }
 
-.page-client--item-overlay {
+.client-video--textarea {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  background: #ffffff; }
+
+.client-video-text {
+  width: 100%;
   height: 100%;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .client-video-text p, .client-video-text h3, .client-video-text button {
+    margin-left: 10%;
+    margin-right: 7%; }
+  .client-video-text .sm-cap {
+    font-size: .9em; }
+  .client-video-text p {
+    margin-bottom: 5px;
+    color: #ffffff; }
+  .client-video-text .sm-cap span {
+    background: #157070;
+    padding: 5px; }
+  .client-video-text h3 {
+    line-height: 1.3em; }
+
+.thumbnail-bg {
+  background: #157070; }
+
+.client-video--textarea:hover .client--item-overlay {
+  transform: translateY(-100%); }
+
+.client--item-overlay {
+  position: absolute;
+  height: 102%;
+  width: 100%;
+  display: flex;
   align-items: center;
-  transform: translateY(101%);
+  justify-content: center;
+  transform: translateY(0);
   transition: all 0.3s ease;
-  background: linear-gradient(to bottom right, #f97304, #fb9334); }
-  .page-client--item-overlay p {
+  background: linear-gradient(to bottom right, #d44206, #fb9334); }
+  .client--item-overlay p {
     padding: 20px;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 1.4em;
     font-family: "Oswald", sans-serif; }
-
-/*client page*/
-.page--client-hero-container {
-  position: relative;
-  height: 30vh;
-  width: 100%; }
-  .page--client-hero-container .page--hero-textarea {
-    top: 65%; }
-  .page--client-hero-container .page--title h1 {
-    font-size: 7em; }
-
-.page--client-container {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  min-height: 600px;
-  margin-bottom: 5%;
-  margin-top: 5%; }
-  .page--client-container .work-video--grid {
-    height: 70%;
-    top: 15%; }
-
-.thumbnail-bg {
-  background: #157070; }
-
-.page--client-desc {
-  margin-top: -5%;
-  width: 100%;
-  position: relative;
-  height: 80vh;
-  min-height: 700px; }
-
-.client--desc-textarea {
-  position: absolute;
-  width: 80%;
-  height: 100%;
-  left: 10%; }
-  .client--desc-textarea .page--title-sm span {
-    background: #f97304; }
-  .client--desc-textarea h4 {
-    margin-top: 0;
-    font-size: 1.5em; }
 
 @media screen and (min-width: 1300px) {
   .page--client-item {
