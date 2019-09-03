@@ -69,9 +69,14 @@
 
   <section class="page--client-desc2">
     <div class="client--desc-iphone">
-      <video autoplay loop class="iphone-video">
+      <video autoplay loop muted id="iphone-video">
         <source src="../../assets/iphone.mp4" type="video/mp4">
       </video>
+      <div class="iphone-overlay">
+        <button onclick="pauseIphone()" id="pauseBtn">
+          <i class='fas fa-pause'></i>
+        </button>
+      </div>
     </div>
     <div class="client--desc-textarea2">
       <p class="page--title-sm"><span>service</span></p>
@@ -156,7 +161,7 @@
   </footer>
 
   <script src="../../js/navigation.js"></script>
-  <script src="../../js/page.js"></script>
+  <script src="../../js/client.js"></script>
 </body>
 
 </html>
