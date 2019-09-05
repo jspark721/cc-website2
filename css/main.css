@@ -84,18 +84,19 @@
 .nav--main-content {
   height: 60%;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 135px;
   margin-bottom: 150px;
-  margin-left: 2%; }
+  text-align: center; }
 
 .nav--main-list {
+  padding: 0;
   list-style-type: none; }
   .nav--main-list li {
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
     color: #ffffff;
     text-transform: lowercase;
-    font-size: 3.5em;
+    font-size: 3.7em;
     font-weight: 800; }
   .nav--main-list a {
     margin-top: 10px;
@@ -122,9 +123,13 @@
     color: #157070;
     font-size: .55em; }
 
+.nav--special {
+  margin-left: 35px; }
+
 #services--dropdown {
   list-style: none;
   margin-top: -20px;
+  margin-left: -35px;
   transition: all 0.3s ease; }
   #services--dropdown li {
     font-size: 0.45em;
@@ -138,6 +143,20 @@
     #services--dropdown li:hover {
       color: #157070;
       font-size: .48em; }
+
+@media screen and (max-width: 875px) {
+  .nav--main-list li {
+    font-size: 3em; }
+  #services--dropdown li {
+    padding-right: 10px; } }
+
+@media screen and (max-width: 770px) {
+  #services--dropdown {
+    margin-top: 3px;
+    margin-bottom: -15px; }
+    #services--dropdown li {
+      display: block;
+      margin-top: 5px; } }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -342,18 +361,20 @@ button {
 .work-container {
   position: relative;
   width: 100%;
-  height: 115vh;
   background: #d44206;
-  min-height: 800px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 .work-container--title {
-  position: absolute;
   width: 100%;
   text-align: center;
   padding-top: 80px;
   z-index: 5; }
   .work-container--title h1 {
     margin-top: 4%;
+    margin-bottom: 5%;
     color: #ffffff;
     font-size: 5em;
     line-height: 1em; }
@@ -362,15 +383,14 @@ button {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  width: 86%;
+  width: 87%;
   height: 55%;
-  position: absolute;
-  z-index: 1;
-  left: 7%;
-  top: 25%; }
+  max-width: 1300px;
+  z-index: 1; }
 
 .work-video--item {
   position: relative;
+  height: 520px;
   transition: all 0.3s ease;
   z-index: 0; }
   .work-video--item:hover {
@@ -431,6 +451,7 @@ button {
   align-items: flex-end; }
   .work-container--main-btn button {
     margin-bottom: 7%;
+    margin-top: 5%;
     border: 1px solid #000000; }
     .work-container--main-btn button:hover {
       background: #157070;
@@ -438,7 +459,6 @@ button {
 
 .services-container {
   width: 100%;
-  height: 115vh;
   background: #ffffff;
   position: relative;
   display: flex;
@@ -448,10 +468,7 @@ button {
   min-height: 800px; }
 
 .services--header {
-  position: absolute;
-  top: 0;
   width: 100%;
-  height: 20%;
   background: #ffffff;
   text-align: center; }
   .services--header h1 {
@@ -466,17 +483,20 @@ button {
       color: #f97304; }
 
 .services--grid {
-  margin-top: 10%;
+  margin-top: 2%;
+  margin-bottom: 10%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
   width: 87%;
   height: 60%;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  max-width: 1300px; }
 
 .services--item {
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 300px; }
 
 .item-text, .item-button {
   display: flex;
@@ -726,10 +746,6 @@ footer {
       color: #d44206; }
 
 @media screen and (min-width: 1400px) {
-  .work-container {
-    height: 120vh;
-    max-height: 1200px;
-    background: #d44206; }
   .work-video--thumbnail {
     height: 65%; } }
 
@@ -751,11 +767,11 @@ footer {
   .work-video--thumbnail {
     height: 45%; }
   .work-video--textarea {
-    height: 55%; } }
+    height: 55%; }
+  .about--textarea h2 {
+    width: 80%; } }
 
 @media screen and (max-width: 800px) {
-  .work-container {
-    height: 100vh; }
   .work-video--grid {
     display: grid;
     grid-template-columns: 1fr; }
@@ -767,4 +783,30 @@ footer {
     height: 100%;
     right: 0; }
   .work-video--item {
-    border-top: 1px solid #ffffff; } }
+    height: 300px; }
+  .work-container--title h1 {
+    font-size: 4em; }
+  .services--header h1 {
+    font-size: 4em; }
+  .services--grid {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr); }
+  .services--item {
+    height: 300px; }
+  .item1 {
+    grid-area: auto; }
+  .item2 {
+    grid-area: auto; }
+  .item3 {
+    grid-area: auto; }
+  .item4 {
+    grid-area: auto; }
+  .item5 {
+    grid-area: auto; }
+  .about--textarea h1 {
+    font-size: 4em; }
+  .about--bigtitle {
+    font-size: 3.5em; }
+  .contact--text h1 {
+    font-size: 4em; } }

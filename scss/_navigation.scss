@@ -92,19 +92,20 @@
 .nav--main-content {
   height: 60%;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 135px;
   margin-bottom: 150px;
-  margin-left: 2%;
+  text-align: center;
 }
 
 .nav--main-list {
+  padding: 0;
   list-style-type: none;
   li {
     margin-bottom: 20px;
     font-family: $header;
     color: $white;
     text-transform: lowercase;
-    font-size: 3.5em;
+    font-size: 3.7em;
     font-weight: 800;
   }
   a {
@@ -139,9 +140,13 @@
   }
 }
 
+.nav--special {
+  margin-left: 35px;
+}
 #services--dropdown {
   list-style: none;
   margin-top: -20px;
+  margin-left: -35px;
   transition: $ease;
   li {
     font-size: 0.45em;
@@ -155,6 +160,30 @@
     &:hover {
       color: $teal;
       font-size: .48em;
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .nav--main-list {
+    li {
+      font-size: 3em;
+    }
+  }
+  #services--dropdown {
+    li {
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #services--dropdown {
+    margin-top: 3px;
+    margin-bottom: -15px;
+    li {
+      display: block;
+      margin-top: 5px;
     }
   }
 }
