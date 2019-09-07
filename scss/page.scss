@@ -468,6 +468,53 @@
     background-image: url('../assets/about-page.jpg');
   }
 }
+@media screen and (max-width: 800px) {
+  .page--client-hero-container2 {
+    text-align: center;
+  }
+  .page--client-desc2 {
+    height: auto;
+    min-height: 1200px;
+  }
+  .client--desc-iphone {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: -30px;
+  }
+  #iphone-video {
+    height: 700px;
+  }
+  .client--desc-textarea2 {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 450px;
+    align-items: center;
+    text-align: center;
+  }
+  .client-video-container {
+    height: 1200px;
+    margin-top: -100px;
+    margin-bottom: 200px;
+  }
+  .client-video--grid {
+    grid-template-columns: 1fr;
+  }
+  .client-video--item {
+    height: 300px;
+  }
+  .client-video--thumbnail {
+    width: 50%;
+    height: 100%;
+  }
+  .client-video--textarea {
+    width: 50%;
+    height: 100%;
+    right: 0;
+  }
+}
 
 @media screen and (max-width: 777px) {
   .page--work-grid {
