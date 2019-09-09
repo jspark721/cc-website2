@@ -11,7 +11,7 @@
   <div id="hero" class="hero--textarea">
     <img id="logo-main" src="wp-content/uploads/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
   </div>
-  <a class="swipe-up" href="/#work">
+  <a class="swipe-up" href="#work">
     <img src="wp-content/uploads/assets/SwipeUp.gif" alt="swipe up sticker" />
   </a>
   <!-- Use a button to pause/play the video with JavaScript -->
@@ -19,7 +19,7 @@
 </section>
 
 <!-- <section class="break-container"></section> -->
-<a name="work"></a>
+<div id="work"></a>
 <section class="work-container">
   <div class="work-container--title">
     <h1>a taste of our work</h1>
