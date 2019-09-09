@@ -9,10 +9,10 @@
   </video>
   <div class="hero-video--overlay"></div>
   <div id="hero" class="hero--textarea">
-    <img id="logo-main" src="wp-content/uploads/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
+    <img id="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
   </div>
   <a class="swipe-up" href="#work">
-    <img src="wp-content/uploads/assets/SwipeUp.gif" alt="swipe up sticker" />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/SwipeUp.gif" alt="swipe up sticker" />
   </a>
   <!-- Use a button to pause/play the video with JavaScript -->
   <button id="video-btn" onclick="playPause()">pause <i class="fas fa-pause"></i></button>
@@ -28,7 +28,7 @@
     <div class="work-video--item">
       <div class="work-video--thumbnail">
         <video autoplay muted loop class="work-video">
-          <source src="wp-content/uploads/assets/work-mtvvid.mp4" type="video/mp4">
+          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-mtvvid.mp4" type="video/mp4">
         </video>
       </div>
       <div class="work-video--textarea">
@@ -40,7 +40,7 @@
     <div class="work-video--item">
       <div class="work-video--thumbnail">
         <video autoplay muted loop class="work-video">
-          <source src="wp-content/uploads/assets/work-immortalsvid.mp4" type="video/mp4">
+          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-immortalsvid.mp4" type="video/mp4">
         </video>
       </div>
       <div class="work-video--textarea">
@@ -52,7 +52,7 @@
     <div class="work-video--item">
       <div class="work-video--thumbnail">
         <video autoplay muted loop class="work-video">
-          <source src="wp-content/uploads/assets/work-fathomvid.mp4" type="video/mp4">
+          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-fathomvid.mp4" type="video/mp4">
         </video>
       </div>
       <div class="work-video--textarea">
@@ -117,7 +117,7 @@
 </section>
 
 <section class="about-container">
-  <img class="logo-bg" src="wp-content/uploads/assets/cc-logo-sm.png" />
+  <img class="logo-bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-sm.png" />
   <div class="about--textarea">
     <h1>why <br>crispy chicken<span>?</span></h1>
     <div class="hero-title-line"></div>

@@ -18,7 +18,7 @@ get_header();
 <section class="page--client-desc2">
   <div class="client--desc-iphone">
     <video autoplay loop id="iphone-video">
-      <source src="../../assets/iphone.mp4" type="video/mp4">
+      <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/iphone.mp4" type="video/mp4">
     </video>
     <div class="iphone-overlay">
       <button onclick="pauseIphone()" id="pauseBtn">
