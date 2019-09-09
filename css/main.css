@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://use.typekit.net/rmf2opm.css");
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://use.typekit.net/rmf2opm.css");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 #menu--box {
   position: fixed;
   z-index: 10;
@@ -621,6 +623,30 @@
     height: 280px; }
   .page--about-container h2 {
     font-size: 1.7em; } }
+
+.page--contact-container {
+  position: relative;
+  background-color: #FDFDFD;
+  height: 90vh;
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.page--contact-textarea {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column; }
+
+.page--contact-form {
+  width: 50%;
+  background: #fb9334;
+  height: 100%; }
 
 ::-webkit-scrollbar {
   display: none; }
