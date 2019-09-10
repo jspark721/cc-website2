@@ -608,35 +608,46 @@ Text Domain: crispychicken.co
   justify-content: center;
   align-items: center;
   text-align: left;
-  flex-direction: column; }
+  flex-direction: column;
+  border-right: 3px solid #f97304; }
+  .page--contact-textarea .page--title {
+    width: 70%; }
+  .page--contact-textarea .client--line {
+    margin-top: 45px;
+    margin-bottom: 45px; }
 
 .page--contact-form {
   width: 50%;
   background: #ffffff;
-  height: 100%;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .page--contact-form h3 {
+    font-family: "proxima-nova", sans-serif;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #157070;
+    text-align: center; }
 
-#wpforms-13 {
+#wpforms-19 {
   padding: 55px;
-  border-left: 3px solid #f97304;
   width: 100%;
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center; }
-  #wpforms-13 form {
+  #wpforms-19 form {
     width: 80%; }
-  #wpforms-13 label {
+  #wpforms-19 label {
     font-size: 0.8em;
     font-family: "proxima-nova", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #424242; }
-  #wpforms-13 button {
+  #wpforms-19 button {
     outline: 0;
     border: none;
     font-family: "proxima-nova", sans-serif;
@@ -650,13 +661,14 @@ Text Domain: crispychicken.co
     cursor: pointer;
     transition: all 0.3s ease; }
 
-/* .map {
-  width: 85%;
+.map {
+  margin-top: -15px;
+  width: 100%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-  filter: grayscale(100%); } */
+  filter: grayscale(100%); }
 
 ::-webkit-scrollbar {
   display: none; }
