@@ -591,39 +591,48 @@ Text Domain: crispychicken.co
   .page--about-container h2 {
     font-size: 1.7em; } }
 
-.page--contact-container {
+.page--contact-fixed {
   position: relative;
   background-color: #FDFDFD;
-  height: 90vh;
+  height: 100vh;
   min-height: 700px;
-  width: 100%;
+  width: 45%;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.page--contact-textarea {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  text-align: left;
-  flex-direction: column;
-  border-right: 3px solid #f97304; }
-  .page--contact-textarea .page--title {
-    width: 70%; }
-  .page--contact-textarea .client--line {
+  background-image: url("../assets/cc-office.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .page--contact-fixed h1 {
+    margin-left: 30%;
+    color: #ffffff; }
+    .page--contact-fixed h1 span {
+      color: #f97304; }
+
+.page--contact-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100vh;
+  overflow-y: scroll; }
+  .page--contact-scroll .page--title {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 10%; }
+  .page--contact-scroll .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
 
 .page--contact-form {
-  width: 50%;
+  width: 100%;
   background: #ffffff;
-  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 400px; }
   .page--contact-form h3 {
     font-family: "proxima-nova", sans-serif;
     letter-spacing: 0;
@@ -631,7 +640,7 @@ Text Domain: crispychicken.co
     color: #157070;
     text-align: center; }
 
-#wpforms-19 {
+#wpforms-13 {
   padding: 55px;
   width: 100%;
   height: 100%;
@@ -639,15 +648,15 @@ Text Domain: crispychicken.co
   display: flex;
   justify-content: center;
   align-items: center; }
-  #wpforms-19 form {
+  #wpforms-13 form {
     width: 80%; }
-  #wpforms-19 label {
+  #wpforms-13 label {
     font-size: 0.8em;
     font-family: "proxima-nova", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #424242; }
-  #wpforms-19 button {
+  #wpforms-13 button {
     outline: 0;
     border: none;
     font-family: "proxima-nova", sans-serif;
@@ -662,8 +671,7 @@ Text Domain: crispychicken.co
     transition: all 0.3s ease; }
 
 .map {
-  margin-top: -15px;
-  width: 100%;
+  width: 80%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);

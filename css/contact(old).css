@@ -1,47 +1,49 @@
 @import url("https://use.typekit.net/rmf2opm.css");
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-.page--contact-fixed {
+.page--contact-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 100vh;
+  height: 90vh;
   min-height: 700px;
-  width: 45%;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center; }
+
+.page--contact-textarea {
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: left;
+  flex-direction: column;
   background-image: url("../assets/cc-office.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover; }
-  .page--contact-fixed h1 {
-    margin-left: 30%;
-    color: #ffffff; }
-    .page--contact-fixed h1 span {
+  .page--contact-textarea .page--title {
+    width: 70%; }
+    .page--contact-textarea .page--title h1 {
+      color: #ffffff; }
+    .page--contact-textarea .page--title p {
       color: #f97304; }
-
-.page--contact-scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;
-  height: 100vh;
-  overflow-y: scroll; }
-  .page--contact-scroll .page--title {
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-bottom: 10%; }
-  .page--contact-scroll .client--line {
+  .page--contact-textarea .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
+  .page--contact-textarea .page--title-sm span {
+    background: #f97304;
+    color: #ffffff; }
 
 .page--contact-form {
-  width: 100%;
+  width: 50%;
   background: #ffffff;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-bottom: 400px; }
+  flex-direction: column; }
   .page--contact-form h3 {
     font-family: "proxima-nova", sans-serif;
     letter-spacing: 0;
@@ -80,7 +82,7 @@
     transition: all 0.3s ease; }
 
 .map {
-  width: 80%;
+  width: 85%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
