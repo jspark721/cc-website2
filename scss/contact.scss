@@ -44,32 +44,26 @@
 
 
 .page--contact-form {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   background: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 400px;
   h3 {
-    font-family: $body;
-    letter-spacing: 0;
-    text-transform: none;
     color: $teal;
-    text-align: center;
+    span {
+      color: $orange;
+    }
   }
 }
 
-#wpforms-13{
-  padding: 55px;
-  width: 100%;
+#wpforms-19{
+  width: 97%;
+  margin-left: 1.5%;
   height: 100%;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   form {
-    width: 80%;
+    width: 100%;
   }
   label {
     font-size: 0.8em;
@@ -92,10 +86,22 @@
     cursor: pointer;
     transition: $ease;
   }
+  input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba($orange,1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba($orange, 1);
+  }
+  input[type=email]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba($orange,1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba($orange, 1);
+  }
 }
 
 .map {
-  width: 80%;
+  width: 100%;
   -webkit-filter: grayscale(100%);
      -moz-filter: grayscale(100%);
       -ms-filter: grayscale(100%);
