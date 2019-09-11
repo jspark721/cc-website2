@@ -363,7 +363,7 @@
 .client-logo-sm {
   width: 50%; }
 
-/*client page vh1*/
+/*client page*/
 .page--client-hero-container2 {
   position: relative;
   height: 50vh;
@@ -482,7 +482,7 @@
   bottom: 0;
   width: 100%;
   height: 45%;
-  background: #ffffff; }
+  background: #F9F7F4; }
 
 .client-video-text {
   width: 100%;
@@ -551,7 +551,7 @@
   .page--hero-container {
     background-image: url("../assets/about-page.jpg"); } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 965px) {
   .page--client-hero-container2 {
     text-align: center; }
   .page--client-desc2 {
