@@ -967,6 +967,10 @@ button {
 .work-video {
   width: 100%; }
 
+.work-video-horizontal {
+  object-fit: cover;
+  height: 100%; }
+
 .work-video--textarea {
   position: absolute;
   bottom: 0;
