@@ -274,7 +274,6 @@
   width: 100%;
   height: 80vh;
   min-height: 600px;
-  margin-bottom: 10%;
   margin-top: 5%; }
 
 .client-video--grid {
@@ -409,7 +408,7 @@
   .client-video-container {
     height: 1200px;
     margin-top: -100px;
-    margin-bottom: 200px; }
+    margin-bottom: 50px; }
   .client-video--grid {
     grid-template-columns: 1fr; }
   .client-video--item {
