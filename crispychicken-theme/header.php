@@ -31,7 +31,9 @@
         <ul class="nav--main-list">
           <!-- <?php
             wp_nav_menu( $arg = array (
-              'theme_location' => 'primary'
+              'theme_location' => 'primary',
+              'menu_class'     => 'nav--main-list',
+              'items_wrap' => '<ol id="%1$s" class="%2$s">%3$s</ol>'
             ));
            ?> -->
           <li><span class="nav--number">01</span><a href="<?php echo get_site_url(); ?>/about">about</a></li>
@@ -46,8 +48,8 @@
               <li>other</li>
             </ul>
           </li>
-          <li><span class="nav--number">04</span><a>merch</a></li>
-          <li><span class="nav--number">05</span><a>contact</a></li>
+          <li><span class="nav--number">04</span><a href="<?php echo get_site_url(); ?>/merch">merch</a></li>
+          <li><span class="nav--number">05</span><a href="<?php echo get_site_url(); ?>/contact">contact</a></li>
 
         </ul>
       </div>
