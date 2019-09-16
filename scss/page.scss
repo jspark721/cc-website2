@@ -245,7 +245,7 @@
   }
   .page--title {
     h1 {
-      font-size: 7em;
+      font-size: 5em;
     }
   }
 }
@@ -451,12 +451,6 @@
   }
 }
 
-@media screen and (min-width: 1250px) {
-  .page--hero-textarea {
-    width: 60%;
-    left: 20%;
-  }
-}
 @media screen and (max-width: 1200px) {
   .page--hero-container {
     background-image: url('../assets/about-page-wide.jpg');

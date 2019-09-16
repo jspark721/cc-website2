@@ -371,7 +371,7 @@
   .page--client-hero-container2 .page--hero-textarea {
     top: 45%; }
   .page--client-hero-container2 .page--title h1 {
-    font-size: 7em; }
+    font-size: 5em; }
 
 .page--client-desc2 {
   width: 100%;
@@ -439,8 +439,7 @@
   position: relative;
   width: 100%;
   height: 80vh;
-  min-height: 600px;
-  margin-bottom: 10%; }
+  min-height: 600px; }
 
 .client-video--grid {
   display: grid;
@@ -537,11 +536,6 @@
   .about--grid-item1, .about--grid-item2, .about--grid-item3, .about--grid-item4, .about--grid-item5, .about--grid-item6 {
     min-height: 500px; } }
 
-@media screen and (min-width: 1250px) {
-  .page--hero-textarea {
-    width: 60%;
-    left: 20%; } }
-
 @media screen and (max-width: 1200px) {
   .page--hero-container {
     background-image: url("assets/about-page-wide.jpg"); } }
@@ -574,7 +568,7 @@
   .client-video-container {
     height: 1200px;
     margin-top: -100px;
-    margin-bottom: 200px; }
+    margin-bottom: 50px; }
   .client-video--grid {
     grid-template-columns: 1fr; }
   .client-video--item {
@@ -799,6 +793,9 @@ button {
   padding: 15px;
   background: #ffffff;
   border: none; }
+.btn-light {
+  background: #F9F7F4;
+  padding: 15px; }
 
 #page-border-top {
   width: 100%;
@@ -968,7 +965,7 @@ button {
 .work-video-horizontal {
   object-fit: cover;
   height: 100%; }
-  
+
 .work-video--textarea {
   position: absolute;
   bottom: 0;
@@ -1014,6 +1011,9 @@ button {
     .work-container--main-btn button:hover {
       background: #157070;
       color: #ffffff; }
+  .work-container--main-btn a {
+  margin-bottom: 7%;
+  margin-top: 5%; }
 
 .services-container {
   width: 100%;

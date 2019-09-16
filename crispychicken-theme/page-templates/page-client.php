@@ -40,8 +40,17 @@ while ( have_posts() ) :
     get_template_part( 'partials/client-vh1');
   } elseif ( is_page('lol-network')) {
     get_template_part( 'partials/client-lol');
+  } elseif ( is_page('immortals')) {
+    get_template_part( 'partials/client-immortals');
+  } elseif ( is_page('fathom-events')) {
+    get_template_part( 'partials/client-fathom');
+  } elseif ( is_page('leatherhead')) {
+    get_template_part( 'partials/client-leatherhead');
+  } elseif ( is_page('arielle-vandenberg')) {
+    get_template_part( 'partials/client-arielle');
   } else {
-    echo 'not a client page';
+    echo '<div class="work-container--main-btn">
+      <a href="<?php echo get_site_url(); ?>/work"><button class="btn-light">back to all clients</button></a></div>';
   }
 
 endwhile; // End of the loop.
