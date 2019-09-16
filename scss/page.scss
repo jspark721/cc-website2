@@ -161,6 +161,9 @@
       color: $white;
     }
   }
+  a {
+    margin-top: 2%;
+  }
 }
 
 //404 page
@@ -504,10 +507,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  margin-top: 7%;
   .page--client-item {
-    height: 200px;
+    height: 250px;
     background: $orange;
     &:hover {
       background: $light;
@@ -587,6 +589,10 @@
     width: 50%;
     height: 100%;
     right: 0;
+  }
+  .page--services-grid-container {
+    margin-top: 15%;
+    min-height: 450px;
   }
 }
 
