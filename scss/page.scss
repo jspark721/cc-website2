@@ -163,6 +163,38 @@
   }
 }
 
+//404 page
+.page-404-container {
+  width: 100%;
+  height: 100vh;
+  background: $lightorange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    color: $orange;
+    font-size: 7.5em;
+    margin: 0 0 15px 0;
+  }
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+  }
+  button {
+    margin-top: 2%;
+    &:hover {
+      background: $white;
+      color: $dark;
+    }
+  }
+  a {
+    margin-top: 2%;
+  }
+}
 
 //work page
 
@@ -452,7 +484,7 @@
       text-transform: none;
       letter-spacing: 0px;
       font-size: 1.3em;
-      line-height: 1.5em;
+      line-height: 1.4em;
       margin-top: 30px;
       color: $dark;
     }
