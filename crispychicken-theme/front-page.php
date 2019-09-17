@@ -34,7 +34,7 @@
       <div class="work-video--textarea">
         <p class="sm-cap"><span>MTV</span></p>
         <h3>Wild 'N Out Content Creation</h3>
-        <button class="work-video--btn">details</button>
+        <a href="<?php echo get_site_url(); ?>/work/mtv"><button class="work-video--btn">details</button></a>
       </div>
     </div>
     <div class="work-video--item">
@@ -46,7 +46,7 @@
       <div class="work-video--textarea">
         <p class="sm-cap"><span>Immortals</span></p>
         <h3>LA Valiant Social Event Promotion</h3>
-        <button class="work-video--btn">details</button>
+        <a href="<?php echo get_site_url(); ?>/work/immortals"><button class="work-video--btn">details</button></a>
       </div>
     </div>
     <div class="work-video--item">
@@ -58,7 +58,7 @@
       <div class="work-video--textarea">
         <p class="sm-cap"><span>Fathom Events</span></p>
         <h3>Batman Content Creation</h3>
-        <button class="work-video--btn">details</button>
+        <a href="<?php echo get_site_url(); ?>/work/fathom-events"><button class="work-video--btn">details</button></a>
       </div>
     </div>
   </div>
@@ -74,36 +74,44 @@
   </div>
   <div class="services--grid">
     <div class="services--item item1">
-      <div class="item-text">
-        <h3>social <br>strategy</h3>
-      </div>
-      <div class="services--item-overlay overlay-bg1">
-        <p>Consult on actionable insights and best practices</p>
-      </div>
+      <a href="<?php echo get_site_url(); ?>/service/social-strategy">
+        <div class="item-text">
+          <h3>social <br>strategy</h3>
+        </div>
+        <div class="services--item-overlay overlay-bg1">
+          <p>Consult on actionable insights and best practices</p>
+        </div>
+      </a>
     </div>
     <div class="services--item item2">
-      <div class="item-text">
-        <h3>content <br>creation</h3>
-      </div>
-      <div class="services--item-overlay overlay-bg2">
-        <p>Produce and edit videos and graphics</p>
-      </div>
+      <a href="<?php echo get_site_url(); ?>/service/content-creation">
+        <div class="item-text">
+          <h3>content <br>creation</h3>
+        </div>
+        <div class="services--item-overlay overlay-bg2">
+          <p>Produce and edit videos and graphics</p>
+        </div>
+      </a>
     </div>
     <div class="services--item item3">
-      <div class="item-text">
-        <h3>audience <br>development</h3>
-      </div>
-      <div class="services--item-overlay overlay-bg3">
-        <p>Cultivate an engaged community</p>
-      </div>
+      <a href="<?php echo get_site_url(); ?>/service/audience-development">
+        <div class="item-text">
+          <h3>audience <br>development</h3>
+        </div>
+        <div class="services--item-overlay overlay-bg3">
+          <p>Cultivate an engaged community</p>
+        </div>
+      </a>
     </div>
     <div class="services--item item4">
-      <div class="item-text">
-        <h3>paid media</h3>
-      </div>
-      <div class="services--item-overlay overlay-bg4">
-        <p>Target your consumer</p>
-      </div>
+      <a href="<?php echo get_site_url(); ?>/service/paid-media">
+        <div class="item-text">
+          <h3>paid media</h3>
+        </div>
+        <div class="services--item-overlay overlay-bg4">
+          <p>Target your consumer</p>
+        </div>
+      </a>
     </div>
     <div class="services--item item5">
       <div class="item-text">
@@ -137,7 +145,7 @@
   <div class="overlay"></div>
   <div class="contact--text">
     <h1>Let's start cookin<span>'</span></h1><br>
-    <button class="btn-primary">get in touch</button>
+    <a href="<?php echo get_site_url(); ?>/contact"><button class="btn-primary">get in touch</button></a>
   </div>
 </section>
 

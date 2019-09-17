@@ -508,8 +508,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 7%;
+  .page--work-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .page--client-item {
-    height: 250px;
+    height: 200px;
     background: $orange;
     &:hover {
       background: $light;
@@ -595,13 +598,22 @@
     min-height: 450px;
   }
 }
-
+@media screen and (max-width: 875px) {
+  .page--services-grid-container {
+    .page--work-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
 @media screen and (max-width: 777px) {
   .page--work-grid {
     grid-template-columns: 1fr 1fr;
   }
   .page--about-container {
     min-height: 450px;
+  }
+  .page--services-grid-container {
+    margin-top: 20%;
   }
 }
 
@@ -645,6 +657,11 @@
   }
   .page--client-item {
     height: 200px;
+  }
+  .page--services-grid-container {
+    .page--work-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
