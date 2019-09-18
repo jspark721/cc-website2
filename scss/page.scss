@@ -565,6 +565,9 @@
   #iphone-video {
     height: 700px;
   }
+  .iphone-overlay {
+    height: 700px;
+  }
   .client--desc-textarea2 {
     width: 80%;
     height: 100%;
@@ -673,5 +676,11 @@
     h2 {
       font-size: 1.7em;
     }
+  }
+  .client--desc-textarea2 {
+    top: 500px;
+  }
+  .client-video-container {
+    margin-top: 25px;
   }
 }

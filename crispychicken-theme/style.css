@@ -634,6 +634,8 @@ Text Domain: crispychicken.co
     top: -30px; }
   #iphone-video {
     height: 700px; }
+  .iphone-overlay {
+    height: 700px; }
   .client--desc-textarea2 {
     width: 80%;
     height: 100%;
@@ -697,11 +699,15 @@ Text Domain: crispychicken.co
   .page--services-grid-container .page--work-grid {
     grid-template-columns: 1fr 1fr; } }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 495px) {
   .page--client-item {
     height: 280px; }
   .page--about-container h2 {
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+  .client--desc-textarea2 {
+    top: 500px; }
+  .client-video-container {
+    margin-top: 25px; } }
 
 .page--contact-fixed {
   position: relative;
