@@ -18,7 +18,12 @@
 
 <body <?php body_class();?>>
   <header>
-    <div id="page-load"></div>
+    <?php if(is_home()): ?>
+
+      <div id="page-load"></div>
+
+    <?php endif; ?>
+
     <div id="page-border-top"></div>
     <div id="page-border-right"></div>
     <div id="page-border-bottom"></div>
@@ -26,7 +31,7 @@
     <div id="nav--main" class="nav--open">
       <div class="nav--main-content">
         <div class="logo">
-          <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-sm.png" alt="crispy chicken small logo"/></a>
+          <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-sm.png" alt="crispy chicken small logo"/></a>
         </div>
         <ul class="nav--main-list">
           <!-- <?php
