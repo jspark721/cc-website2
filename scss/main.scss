@@ -1463,21 +1463,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .work-video--thumbnail {
-    width: 50%;
-    height: 100%;
-  }
-  .work-video--textarea {
-    width: 50%;
-    height: 100%;
-    right: 0;
-  }
-  .work-video--item {
-    height: 300px;
-  }
+
   .work-container--title {
     h1 {
       font-size: 4em;
+      margin-left: 30px;
+      margin-right: 30px;
     }
   }
   .services--header {
@@ -1523,9 +1514,20 @@ footer {
   }
 }
 
-@media screen and (max-width: 875px) {
-
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .work-video--thumbnail {
+    height: 100%;
+  }
+  .work-video--textarea {
+    width: 50%;
+    height: 100%;
+    right: 0;
+  }
+  .work-video--item {
+    height: 300px;
+  }
 }
+
 @media screen and (max-width: 777px) {
   .page--work-grid {
     grid-template-columns: 1fr 1fr;
@@ -1583,6 +1585,39 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .about-container {
+    height: 770px;
+    min-height: 750px;
+  }
+  .work-container--title {
+    h1 {
+      font-size: 3em;
+    }
+  }
+  .services--header {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+  .about--textarea {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+  .about--bigtitle {
+    font-size: 3em;
+  }
+  .contact--text {
+    h1 {
+      font-size: 3em;
+    }
+  }
   .page--work-grid {
     margin-top: 100px;
   }
@@ -1607,6 +1642,19 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
+  #hero-video, .hero-video--overlay, #video-btn {
+    display: none;
+  }
+  .hero-container {
+    background: $light;
+  }
+  .about-container {
+    height: 830px;
+    min-height: 820px;
+  }
+  .contact-container {
+    background-attachment: scroll;
+  }
   .page--client-item {
     height: 280px;
   }
