@@ -1543,6 +1543,7 @@ footer {
   #services--dropdown {
     margin-top: 3px;
     margin-bottom: -15px;
+    margin-left: 0;
     li {
       display: block;
       margin-top: 5px;
@@ -1684,5 +1685,14 @@ footer {
   .client-video--textarea {
     width: 100%;
     height: 50%;
+  }
+  #hero-work-video {
+    display: none;
+  }
+  .page--work-hero-container {
+    background: $dark;
+  }
+  .page--work-grid-container {
+    background: $dark;
   }
 }
