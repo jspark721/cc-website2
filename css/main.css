@@ -1146,8 +1146,8 @@ footer {
 
 .page--services-container {
   width: 100%;
-  height: 45vh;
-  margin-top: -85px;
+  display: flex;
+  justify-content: center;
   position: relative; }
   .page--services-container .page--title p {
     text-transform: none;
@@ -1156,6 +1156,10 @@ footer {
     line-height: 1.4em;
     margin-top: 30px;
     color: #424242; }
+
+.page--services-textarea {
+  width: 80%;
+  margin-top: -15px; }
 
 .services--line {
   margin-bottom: 30px;
@@ -1171,7 +1175,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7%; }
+  margin: 7% 0; }
   .page--services-grid-container .page--work-grid {
     grid-template-columns: repeat(4, 1fr); }
   .page--services-grid-container .page--client-item {
@@ -1340,10 +1344,7 @@ footer {
   .client-video--textarea {
     width: 50%;
     height: 100%;
-    right: 0; }
-  .page--services-grid-container {
-    margin-top: 15%;
-    min-height: 450px; } }
+    right: 0; } }
 
 @media screen and (max-width: 875px) {
   .nav--main-list li {
@@ -1404,11 +1405,7 @@ footer {
 
 @media screen and (max-width: 777px) {
   .page--work-grid {
-    grid-template-columns: 1fr 1fr; }
-  .page--about-container {
-    min-height: 450px; }
-  .page--services-grid-container {
-    margin-top: 20%; } }
+    grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 770px) {
   #services--dropdown {
@@ -1455,8 +1452,6 @@ footer {
     font-size: 3em; }
   .contact--text h1 {
     font-size: 3em; }
-  .page--work-grid {
-    margin-top: 100px; }
   .page--client-item {
     height: 200px; }
   .page--services-grid-container .page--work-grid {
