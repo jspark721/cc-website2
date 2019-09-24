@@ -487,7 +487,7 @@ button {
   margin-top: 2%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
   width: 87%;
   height: 60%;
@@ -523,28 +523,19 @@ button {
 
 .item1 {
   background-image: url("../assets/services1.jpg");
-  background-size: cover;
-  grid-area: 1 / 1 / 2 / 3; }
+  background-size: cover; }
 
 .item2 {
   background-image: url("../assets/services2.jpg");
-  background-size: cover;
-  grid-area: 1 / 3 / 2 / 5; }
+  background-size: cover; }
 
 .item3 {
   background-image: url("../assets/services3.jpg");
-  background-size: cover;
-  grid-area: 1 / 5 / 2 / 7; }
+  background-size: cover; }
 
 .item4 {
-  background-image: url("../assets/services4.jpg");
-  background-size: cover;
-  grid-area: 2 / 2 / 3 / 4; }
-
-.item5 {
   background-image: url("../assets/services5.jpg");
-  background-size: cover;
-  grid-area: 2 / 4 / 3 / 6; }
+  background-size: cover; }
 
 .services--item:hover .services--item-overlay {
   transform: translateY(-100%); }
@@ -580,9 +571,6 @@ button {
 
 .overlay-bg4 {
   background: linear-gradient(to bottom right, rgba(66, 66, 66, 0.1), rgba(2, 61, 103, 0.3)); }
-
-.overlay-bg5 {
-  background: linear-gradient(to bottom right, rgba(66, 66, 66, 0.1), rgba(251, 147, 52, 0.3)); }
 
 .arrow-lg {
   display: flex;
@@ -666,7 +654,7 @@ button {
 
 .contact-container {
   position: relative;
-  background: url("../assets/home-contact-bg.jpg");
+  background: url("../assets/beach.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -751,13 +739,8 @@ footer {
 .page--hero-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 100vh;
-  width: 100%;
-  background-image: url("../assets/about-page-xwide.jpg");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  height: 70vh;
+  width: 100%; }
 
 .page--hero-textarea {
   position: absolute;
@@ -795,18 +778,18 @@ footer {
 .page--about-container {
   position: relative;
   width: 100%;
-  height: 40vh;
-  min-height: 350px;
   background: #d44206;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  .page--about-container h2 {
+  flex-direction: column;
+  padding: 35px 0; }
+  .page--about-container p {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: 700;
     color: #ffffff; }
-    .page--about-container h2 span {
+    .page--about-container p span {
       background: #ffffff;
       color: #d44206; }
 
@@ -829,7 +812,7 @@ footer {
   min-height: 300px; }
 
 .about--grid-item1 {
-  background: url("../assets/marcCC.jpg");
+  background: url("../assets/minaCC.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -850,23 +833,10 @@ footer {
   text-align: right; }
 
 .about--grid-item4 {
-  background: url("../assets/minaCC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.about--grid-item5 {
   background: url("../assets/ricardoCC.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-
-.about--grid-item6 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 12%; }
 
 .grid-item--text span {
   color: #f97304;
@@ -1295,17 +1265,13 @@ footer {
   .work-video--thumbnail {
     height: 60%; }
   .work-video--textarea {
-    height: 40%; }
-  .page--hero-container {
-    background-image: url("../assets/about-page-wide.jpg"); } }
+    height: 40%; } }
 
 @media screen and (max-width: 1100px) {
   .work-video--thumbnail {
     height: 50%; }
   .work-video--textarea {
-    height: 50%; }
-  .page--hero-container {
-    background-image: url("../assets/about-page.jpg"); } }
+    height: 50%; } }
 
 @media screen and (max-width: 965px) {
   .page--client-hero-container2 {
