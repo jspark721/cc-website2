@@ -949,19 +949,15 @@ footer {
 .page--client-desc2 {
   width: 100%;
   position: relative;
-  height: 80vh;
-  min-height: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
 
 .client--desc-textarea2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 45%;
-  height: 100%; }
+  width: 45%; }
   .client--desc-textarea2 .page--title-sm span {
     background: #f97304; }
   .client--desc-textarea2 h4 {
@@ -975,7 +971,7 @@ footer {
   width: 380px; }
 
 #iphone-video {
-  height: 100%; }
+  max-height: 700px; }
 
 .iphone-overlay {
   position: absolute;
@@ -1011,25 +1007,18 @@ footer {
 .client-video-container {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 600px;
-  margin-top: 5%; }
+  margin-bottom: 5%; }
 
 .client-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  width: 86%;
-  height: 75%;
-  position: absolute;
-  z-index: 1;
-  left: 7%;
-  top: 25%; }
+  margin: 10% 8%; }
 
 .client-video--item {
   position: relative;
   transition: all 0.3s ease;
-  z-index: 0; }
+  height: 550px; }
   .client-video--item:hover {
     transform: scale(1.05);
     z-index: 3;
@@ -1260,23 +1249,16 @@ footer {
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: center;
-    top: -30px; }
+    justify-content: center; }
   #iphone-video {
     height: 700px; }
   .iphone-overlay {
     height: 700px; }
   .client--desc-textarea2 {
     width: 80%;
-    height: 100%;
-    position: absolute;
-    top: 450px;
+    margin-top: 750px;
     align-items: center;
     text-align: center; }
-  .client-video-container {
-    height: 1200px;
-    margin-top: -100px;
-    margin-bottom: 50px; }
   .client-video--grid {
     grid-template-columns: 1fr; }
   .client-video--item {
@@ -1421,16 +1403,10 @@ footer {
     height: 280px; }
   .page--about-container h2 {
     font-size: 1.7em; }
-  .client--desc-textarea2 {
-    top: 500px; }
-  .client-video-container {
-    margin-top: 25px;
-    margin-bottom: 0;
-    height: 1900px; }
   .client-video--grid {
     top: 18%; }
   .client-video--item {
-    height: 500px; }
+    height: 550px; }
   .client-video--thumbnail {
     width: 100%;
     height: 50%; }
