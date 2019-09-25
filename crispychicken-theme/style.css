@@ -1023,14 +1023,13 @@ footer {
 /*client page box grid*/
 .client-video-container {
   position: relative;
-  width: 100%;
-  margin-bottom: 5%; }
+  width: 100%; }
 
 .client-video--grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  margin: 10% 8%; }
+  margin: 10% 8% 0 8%; }
 
 .client-video--item {
   position: relative;
