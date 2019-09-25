@@ -853,6 +853,7 @@ footer {
   font-style: italic; }
 
 .about--cta-container {
+  position: relative;
   width: 100%;
   height: 40vh;
   background: #d44206;

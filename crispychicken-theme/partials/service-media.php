@@ -17,8 +17,3 @@
     </div>
   </div>
 </section>
-
-<section class="about--cta-container">
-  <h1>get in touch!</h1>
-  <button class="btn-white">contact us</button>
-</section>
