@@ -1155,37 +1155,21 @@ footer {
       background: #F9F7F4; }
 
 /* contact page */
-.page--contact-fixed {
+.page--contact-container {
   position: relative;
-  background-color: #FDFDFD;
-  height: 100vh;
-  min-height: 700px;
-  width: 45%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background-image: url("../assets/cc-office.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .page--contact-fixed h1 {
-    margin-left: 30%;
-    color: #ffffff; }
-    .page--contact-fixed h1 span {
-      color: #f97304; }
+  flex-direction: column; }
 
-.page--contact-scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;
-  height: 100vh;
-  overflow-y: scroll; }
-  .page--contact-scroll .page--title {
-    margin-top: 20%;
+.page--contact-box {
+  width: 80%;
+  margin: 10% 0; }
+  .page--contact-box .page--title {
+    margin-top: 10%;
     margin-left: 10%;
     margin-bottom: 10%; }
-  .page--contact-scroll .client--line {
+  .page--contact-box .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
 
