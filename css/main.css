@@ -447,13 +447,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end; }
-  .work-container--main-btn button {
-    margin-bottom: 7%;
-    margin-top: 5%;
-    border: 1px solid #000000; }
-    .work-container--main-btn button:hover {
-      background: #157070;
-      color: #ffffff; }
   .work-container--main-btn a {
     margin-bottom: 7%;
     margin-top: 5%; }
@@ -1369,7 +1362,7 @@ footer {
 @media screen and (max-width: 670px) {
   .about--grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(4, 1fr); }
   .about--grid-item3 {
     text-align: left;
     align-items: flex-start; }
