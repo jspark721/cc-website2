@@ -7,7 +7,7 @@
     <p>6060 Center Drive, 10th Floor</p>
     <p>Los Angeles, CA 90045</p>
     <ul class="social-icons">
-      <li><a href="mailto:info@crispychicken.co"><i class="far fa-envelope"></i></a></li>
+      <li><a href="mailto:mina@crispychicken.co"><i class="far fa-envelope"></i></a></li>
       <li><a href="https://www.facebook.com/CrispyChickenCo/"  target="_blank"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="https://www.youtube.com/channel/UCzysAcbGrWTAwHeQ0HHmK_g"  target="_blank"><i class="fab fa-youtube"></i></a></li>
       <li><a href="https://twitter.com/crispychickenco"  target="_blank"><i class="fab fa-twitter"></i></a></li>

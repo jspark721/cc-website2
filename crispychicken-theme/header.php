@@ -46,10 +46,10 @@
           <li class="nav--special">
             <span class="nav--number">03</span>services <i class="fas fa-angle-down icon-sm"></i>
             <ul id="services--dropdown">
-              <a href="<?php echo get_site_url(); ?>/service/audience-development"><li>audience development</li></a>
-              <a href="<?php echo get_site_url(); ?>/service/content-creation"><li>content creation</li></a>
               <a href="<?php echo get_site_url(); ?>/service/social-strategy"><li>social strategy</li></a>
-              <a href="<?php echo get_site_url(); ?>/service/paid-media"><li>paid media</li></a>
+              <a href="<?php echo get_site_url(); ?>/service/content-creation"><li>content creation</li></a>
+              <a href="<?php echo get_site_url(); ?>/service/audience-development"><li>audience development</li></a>
+              <a href="<?php echo get_site_url(); ?>/contact"><li>other</li></a>
             </ul>
           </li>
           <li><span class="nav--number">04</span><a href="<?php echo get_site_url(); ?>/merch">merch</a></li>

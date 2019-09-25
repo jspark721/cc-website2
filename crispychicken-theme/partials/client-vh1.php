@@ -52,7 +52,7 @@
           <h3>Hip Hop Squares Fails</h3>
         </div>
         <div class="client--item-overlay">
-          <p>Ideation & Editing</p>
+          <p>Editing</p>
         </div>
       </div>
     </div>
@@ -61,3 +61,8 @@
 <div class="work-container--main-btn">
   <a href="<?php echo get_site_url(); ?>/work"><button class="btn-light">back to all clients</button></a>
 </div>
+
+<section class="about--cta-container">
+  <h1>get in touch!</h1>
+  <button class="btn-white">contact us</button>
+</section>

@@ -494,7 +494,7 @@ button {
   margin-top: 2%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
   width: 87%;
   height: 60%;
@@ -505,6 +505,9 @@ button {
   overflow: hidden;
   cursor: pointer;
   height: 300px; }
+  .services--item a {
+    text-decoration: none;
+  }
 
 .item-text, .item-button {
   display: flex;
@@ -530,28 +533,20 @@ button {
 
 .item1 {
   background-image: url("assets/services1.jpg");
-  background-size: cover;
-  grid-area: 1 / 1 / 2 / 3; }
+  background-size: cover; }
 
 .item2 {
   background-image: url("assets/services2.jpg");
-  background-size: cover;
-  grid-area: 1 / 3 / 2 / 5; }
+  background-size: cover; }
 
 .item3 {
   background-image: url("assets/services3.jpg");
-  background-size: cover;
-  grid-area: 1 / 5 / 2 / 7; }
+  background-size: cover; }
 
 .item4 {
-  background-image: url("assets/services4.jpg");
-  background-size: cover;
-  grid-area: 2 / 2 / 3 / 4; }
-
-.item5 {
   background-image: url("assets/services5.jpg");
-  background-size: cover;
-  grid-area: 2 / 4 / 3 / 6; }
+  background-size: cover; }
+
 
 .services--item:hover .services--item-overlay {
   transform: translateY(-100%); }
@@ -586,9 +581,6 @@ button {
   background: linear-gradient(to bottom right, rgba(66, 66, 66, 0.1), rgba(212, 66, 6, 0.3)); }
 
 .overlay-bg4 {
-  background: linear-gradient(to bottom right, rgba(66, 66, 66, 0.1), rgba(2, 61, 103, 0.3)); }
-
-.overlay-bg5 {
   background: linear-gradient(to bottom right, rgba(66, 66, 66, 0.1), rgba(251, 147, 52, 0.3)); }
 
 .arrow-lg {
@@ -673,7 +665,7 @@ button {
 
 .contact-container {
   position: relative;
-  background: url("assets/home-contact-bg.jpg");
+  background: url("assets/beach.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -687,7 +679,7 @@ button {
 
 .overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%; }
 
@@ -696,7 +688,7 @@ button {
   position: absolute;
   text-align: center; }
   .contact--text h1 {
-    font-size: 5.5em; }
+    font-size: 4.5em; }
   .contact--text span {
     color: #fb9334; }
   .contact--text button {
@@ -758,13 +750,8 @@ footer {
 .page--hero-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 100vh;
-  width: 100%;
-  background-image: url("assets/about-page-xwide.jpg");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  height: 70vh;
+  width: 100%; }
 
 .page--hero-textarea {
   position: absolute;
@@ -802,18 +789,18 @@ footer {
 .page--about-container {
   position: relative;
   width: 100%;
-  height: 40vh;
-  min-height: 350px;
   background: #d44206;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  .page--about-container h2 {
+  flex-direction: column;
+  padding: 35px 0; }
+  .page--about-container p {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: 700;
     color: #ffffff; }
-    .page--about-container h2 span {
+    .page--about-container p span {
       background: #ffffff;
       color: #d44206; }
 
@@ -836,44 +823,32 @@ footer {
   min-height: 300px; }
 
 .about--grid-item1 {
-  background: url("assets/marcCC.jpg");
+  background: url('assets/minaCC.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-
+  background-position: center;
+}
 .about--grid-item2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 12%; }
-
+  padding: 12%;
+}
 .about--grid-item3 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   padding: 12%;
-  text-align: right; }
-
+  text-align: right;
+}
 .about--grid-item4 {
-  background: url("assets/minaCC.jpg");
+  background: url('assets/ricardoCC.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-
-.about--grid-item5 {
-  background: url("assets/ricardoCC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.about--grid-item6 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 12%; }
+  background-position: center;
+}
 
 .grid-item--text span {
   color: #f97304;
@@ -1041,7 +1016,7 @@ footer {
   outline: 0; }
   #pauseBtn i {
     font-size: 5em;
-    color: #ffffff; }
+    color: #f97304; }
 
 .client--line {
   margin-bottom: 50px;
@@ -1153,8 +1128,8 @@ footer {
 
 .page--services-container {
   width: 100%;
-  height: 45vh;
-  margin-top: -85px;
+  display: flex;
+  justify-content: center;
   position: relative; }
   .page--services-container .page--title p {
     text-transform: none;
@@ -1163,6 +1138,10 @@ footer {
     line-height: 1.4em;
     margin-top: 30px;
     color: #424242; }
+
+.page--services-textarea {
+  width: 80%;
+  margin-top: -15px; }
 
 .services--line {
   margin-bottom: 30px;
@@ -1178,7 +1157,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7%; }
+  margin: 7% 0; }
   .page--services-grid-container .page--work-grid {
     grid-template-columns: repeat(4, 1fr); }
   .page--services-grid-container .page--client-item {
@@ -1188,43 +1167,28 @@ footer {
       background: #F9F7F4; }
 
 /* contact page */
-.page--contact-fixed {
+.page--contact-container {
   position: relative;
-  background-color: #FDFDFD;
-  height: 100vh;
-  min-height: 700px;
-  width: 45%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background-image: url("assets/cc-office.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .page--contact-fixed h1 {
-    margin-left: 30%;
-    color: #ffffff; }
-    .page--contact-fixed h1 span {
-      color: #f97304; }
+  flex-direction: column; }
 
-.page--contact-scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;
-  height: 100vh;
-  overflow-y: scroll; }
-  .page--contact-scroll .page--title {
-    margin-top: 20%;
+.page--contact-box {
+  width: 80%;
+  margin: 5% 0; }
+  .page--contact-box .page--title {
+    margin-top: 10%;
     margin-left: 10%;
     margin-bottom: 10%; }
-  .page--contact-scroll .client--line {
+  .page--contact-box .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
 
 .page--contact-form {
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 100px;
   background: #ffffff; }
   .page--contact-form h3 {
     color: #157070; }
@@ -1272,6 +1236,7 @@ footer {
 
 .map {
   width: 100%;
+  margin-top: 8%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -1298,17 +1263,13 @@ footer {
   .work-video--thumbnail {
     height: 60%; }
   .work-video--textarea {
-    height: 40%; }
-  .page--hero-container {
-    background-image: url("assets/about-page-wide.jpg"); } }
+    height: 40%; } }
 
 @media screen and (max-width: 1100px) {
   .work-video--thumbnail {
     height: 50%; }
   .work-video--textarea {
-    height: 50%; }
-  .page--hero-container {
-    background-image: url("assets/about-page.jpg"); } }
+    height: 50%; } }
 
 @media screen and (max-width: 965px) {
   .page--client-hero-container2 {
@@ -1347,10 +1308,7 @@ footer {
   .client-video--textarea {
     width: 50%;
     height: 100%;
-    right: 0; }
-  .page--services-grid-container {
-    margin-top: 15%;
-    min-height: 450px; } }
+    right: 0; } }
 
 @media screen and (max-width: 875px) {
   .nav--main-list li {
@@ -1370,17 +1328,10 @@ footer {
   .work-video--grid {
     display: grid;
     grid-template-columns: 1fr; }
-  .work-video--thumbnail {
-    width: 50%;
-    height: 100%; }
-  .work-video--textarea {
-    width: 50%;
-    height: 100%;
-    right: 0; }
-  .work-video--item {
-    height: 300px; }
   .work-container--title h1 {
-    font-size: 4em; }
+    font-size: 4em;
+    margin-left: 30px;
+    margin-right: 30px; }
   .services--header h1 {
     font-size: 4em; }
   .services--grid {
@@ -1406,18 +1357,35 @@ footer {
   .contact--text h1 {
     font-size: 4em; } }
 
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .work-video--thumbnail {
+    height: 100%; }
+  .work-video--textarea {
+    width: 50%;
+    height: 100%;
+    right: 0; }
+  .work-video--item {
+    height: 300px; } }
+
 @media screen and (max-width: 777px) {
   .page--work-grid {
     grid-template-columns: 1fr 1fr; }
   .page--about-container {
     min-height: 450px; }
-  .page--services-grid-container {
-    margin-top: 20%; } }
+  .page--contact-fixed {
+    display: none; }
+  .page--contact-scroll {
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative; }
+  .map {
+    display: none; } }
 
 @media screen and (max-width: 770px) {
   #services--dropdown {
     margin-top: 3px;
-    margin-bottom: -15px; }
+    margin-bottom: -15px;
+    margin-left: 0; }
     #services--dropdown li {
       display: block;
       margin-top: 5px; } }
@@ -1441,17 +1409,29 @@ footer {
     font-size: 5em; } }
 
 @media screen and (max-width: 600px) {
-  .page--work-grid {
-    margin-top: 100px; }
+  .about-container {
+    height: 770px;
+    min-height: 750px; }
+  .work-container--title h1 {
+    font-size: 3em; }
+  .services--header h1 {
+    font-size: 3em; }
+  .services--header h2 {
+    font-size: 1.7em; }
+  .about--textarea h1 {
+    font-size: 3em; }
+  .about--textarea h2 {
+    font-size: 1.3em; }
+  .about--bigtitle {
+    font-size: 3em; }
+  .contact--text h1 {
+    font-size: 3em; }
   .page--client-item {
     height: 200px; }
   .page--services-grid-container .page--work-grid {
     grid-template-columns: repeat(2, 1fr); }
   .page--contact-fixed {
-    width: 100%;
-    height: 200px;
-    min-height: 400px;
-    background-position: top; }
+    display: none; }
   .page--contact-scroll {
     width: 100%;
     position: relative; }
@@ -1459,6 +1439,15 @@ footer {
     display: none; } }
 
 @media screen and (max-width: 475px) {
+  #hero-video, .hero-video--overlay, #video-btn {
+    display: none; }
+  .hero-container {
+    background: #F9F7F4; }
+  .about-container {
+    height: 830px;
+    min-height: 820px; }
+  .contact-container {
+    background-attachment: scroll; }
   .page--client-item {
     height: 280px; }
   .page--about-container h2 {
@@ -1466,4 +1455,22 @@ footer {
   .client--desc-textarea2 {
     top: 500px; }
   .client-video-container {
-    margin-top: 25px; } }
+    margin-top: 25px;
+    margin-bottom: 0;
+    height: 1900px; }
+  .client-video--grid {
+    top: 18%; }
+  .client-video--item {
+    height: 500px; }
+  .client-video--thumbnail {
+    width: 100%;
+    height: 50%; }
+  .client-video--textarea {
+    width: 100%;
+    height: 50%; }
+  #hero-work-video {
+    display: none; }
+  .page--work-hero-container {
+    background: #424242; }
+  .page--work-grid-container {
+    background: #424242; } }

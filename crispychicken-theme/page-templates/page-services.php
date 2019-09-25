@@ -9,7 +9,7 @@ get_header();
 
 <img class="services--hero-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/<?php echo get_the_title(); ?>.jpg" />
 <section class="page--services-container">
-  <div class="page--hero-textarea">
+  <div class="page--services-textarea">
     <p class="page--title-sm"><span>services</span></p>
     <div class="page--title">
       <h1><?php echo get_the_title(); ?><span>.</span></h1>
