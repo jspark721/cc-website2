@@ -1169,30 +1169,41 @@ footer {
       background: #F9F7F4; }
 
 /* contact page */
-.page--contact-container {
+.page--contact-fixed {
   position: relative;
+  background-color: #FDFDFD;
+  height: 100vh;
+  min-height: 700px;
+  width: 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: column; }
+  background-image: url("assets/cc-office.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.page--contact-box {
-  width: 80%;
-  margin: 5% 0; }
-  .page--contact-box .page--title {
-    margin-top: 10%;
+.page--contact-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100vh;
+  overflow-y: scroll; }
+  .page--contact-scroll .page--title {
+    margin-top: 20%;
     margin-left: 10%;
     margin-bottom: 10%; }
-  .page--contact-box .client--line {
+  .page--contact-scroll .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
 
 .page--contact-form {
   width: 80%;
   margin-left: 10%;
-  margin-bottom: 100px;
   background: #ffffff; }
   .page--contact-form h3 {
+    font-size: 1.5em;
     color: #157070; }
     .page--contact-form h3 span {
       color: #f97304; }
@@ -1200,6 +1211,7 @@ footer {
 #wpforms-19 {
   width: 97%;
   margin-left: 1.5%;
+  margin-top: 5%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1239,6 +1251,7 @@ footer {
 .map {
   width: 100%;
   margin-top: 8%;
+  margin-bottom: 12%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -1379,9 +1392,7 @@ footer {
   .page--contact-scroll {
     width: 100%;
     margin-bottom: 100px;
-    position: relative; }
-  .map {
-    display: none; } }
+    position: relative; } }
 
 @media screen and (max-width: 770px) {
   #services--dropdown {
@@ -1436,9 +1447,7 @@ footer {
     display: none; }
   .page--contact-scroll {
     width: 100%;
-    position: relative; }
-  .map {
-    display: none; } }
+    position: relative; }}
 
 @media screen and (max-width: 475px) {
   #hero-video, .hero-video--overlay, #video-btn {
