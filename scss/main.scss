@@ -689,7 +689,7 @@ footer {
 .page--hero-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -698,7 +698,7 @@ footer {
   width: 80%;
   height: 40%;
   left: 10%;
-  top: 20%;
+  top: 35%;
   transition-delay: 7s;
   transition: all 2s ease;
 }
@@ -740,17 +740,17 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 35px 0;
+  padding: 55px 0;
   p {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 700;
     color: $white;
-    span {
-      background: $white;
-      color: $redorange;
-    }
+    // span {
+    //   background: $white;
+    //   color: $redorange;
+    // }
   }
 }
 

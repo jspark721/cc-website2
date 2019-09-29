@@ -751,7 +751,7 @@ footer {
 .page--hero-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 70vh;
+  height: 60vh;
   width: 100%; }
 
 .page--hero-textarea {
@@ -759,7 +759,7 @@ footer {
   width: 80%;
   height: 40%;
   left: 10%;
-  top: 20%;
+  top: 35%;
   transition-delay: 7s;
   transition: all 2s ease; }
 

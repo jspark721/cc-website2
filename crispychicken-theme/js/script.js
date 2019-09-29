@@ -53,31 +53,6 @@ setTimeout(function() {
 }, 1700);
 
 
-//page functions
-let aboutText = document.getElementById("about-text");
-
-window.onscroll = function() {
-  aboutText.style.transform = 'translateY(130px)';
-  if(window.scrollY < 5) {
-    aboutText.style.transform = 'translateY(0)';
-  }
-}
-
-// //homepage video button
-// let workVid = document.getElementById("hero-work-video");
-//
-// // pause and play the video
-// function playPause() {
-//   if (workVid.paused) {
-//     workVid.play();
-//     vidBtn.innerHTML = "pause <i class='fas fa-pause'></i>";
-//   } else {
-//     workVid.pause();
-//     vidBtn.innerHTML = "play <i class='fas fa-play'></i>";
-//   }
-// }
-
-
 let iphoneBtn = document.getElementById("pauseBtn");
 let iphoneVid = document.getElementById("iphone-video");
 // pause and play the video

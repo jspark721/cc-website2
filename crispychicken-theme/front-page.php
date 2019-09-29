@@ -36,7 +36,7 @@
         <div class="work-video--textarea">
           <p class="sm-cap"><span>MTV</span></p>
           <h3>Wild 'N Out Content Creation</h3>
-          <a href="<?php echo get_site_url(); ?>/work/mtv"><button class="work-video--btn">details</button></a>
+          <button class="work-video--btn">details</button>
         </div>
       </div>
     </a>
@@ -50,7 +50,7 @@
         <div class="work-video--textarea">
           <p class="sm-cap"><span>Immortals</span></p>
           <h3>LA Valiant Social Event Promotion</h3>
-          <a href="<?php echo get_site_url(); ?>/work/immortals"><button class="work-video--btn">details</button></a>
+          <button class="work-video--btn">details</button>
         </div>
       </div>
     </a>
@@ -64,7 +64,7 @@
         <div class="work-video--textarea">
           <p class="sm-cap"><span>Fathom Events</span></p>
           <h3>Batman Content Creation</h3>
-          <a href="<?php echo get_site_url(); ?>/work/fathom-events"><button class="work-video--btn">details</button></a>
+          <button class="work-video--btn">details</button>
         </div>
       </div>
     </a>
