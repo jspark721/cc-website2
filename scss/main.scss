@@ -1186,40 +1186,30 @@ footer {
 
 /* contact page */
 
-// .page--contact-fixed {
-//   position: relative;
-//   background-color: #FDFDFD;
-//   height: 100vh;
-//   min-height: 700px;
-//   width: 45%;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   background-image: url("../assets/cc-office.jpg");
-//   background-position: left;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   h1 {
-//     margin-left: 30%;
-//     color: $white;
-//     span {
-//       color: $orange;
-//     }
-//   }
-// }
-
-.page--contact-container {
+.page--contact-fixed {
   position: relative;
+  background-color: #FDFDFD;
+  height: 100vh;
+  min-height: 700px;
+  width: 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
+  background-image: url("../assets/cc-office.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.page--contact-box {
-  width: 80%;
-  margin: 10% 0;
+
+.page--contact-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100vh;
+  overflow-y: scroll;
   .page--title {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 10%;
     margin-bottom: 10%;
   }
@@ -1228,6 +1218,29 @@ footer {
     margin-bottom: 45px;
   }
 }
+
+
+
+// .page--contact-container {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+// .page--contact-box {
+//   width: 80%;
+//   margin: 10% 0;
+//   .page--title {
+//     margin-top: 10%;
+//     margin-left: 10%;
+//     margin-bottom: 10%;
+//   }
+//   .client--line {
+//     margin-top: 45px;
+//     margin-bottom: 45px;
+//   }
+// }
 
 
 

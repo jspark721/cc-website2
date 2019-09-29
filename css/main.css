@@ -1136,21 +1136,32 @@ footer {
       background: #F9F7F4; }
 
 /* contact page */
-.page--contact-container {
+.page--contact-fixed {
   position: relative;
+  background-color: #FDFDFD;
+  height: 100vh;
+  min-height: 700px;
+  width: 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: column; }
+  background-image: url("../assets/cc-office.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.page--contact-box {
-  width: 80%;
-  margin: 10% 0; }
-  .page--contact-box .page--title {
-    margin-top: 10%;
+.page--contact-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100vh;
+  overflow-y: scroll; }
+  .page--contact-scroll .page--title {
+    margin-top: 20%;
     margin-left: 10%;
     margin-bottom: 10%; }
-  .page--contact-box .client--line {
+  .page--contact-scroll .client--line {
     margin-top: 45px;
     margin-bottom: 45px; }
 
