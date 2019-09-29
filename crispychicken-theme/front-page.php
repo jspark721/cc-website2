@@ -10,6 +10,7 @@
   <div class="hero-video--overlay"></div>
   <div id="hero" class="hero--textarea">
     <img id="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
+    <img id="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-mobile.png" alt="crispy chicken mobile logo" />
   </div>
   <a class="swipe-up" href="#work">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/SwipeUp.gif" alt="swipe up sticker" />
@@ -25,42 +26,48 @@
     <h1>a taste of our work</h1>
   </div>
   <div class="work-video--grid">
-    <div class="work-video--item">
-      <div class="work-video--thumbnail">
-        <video autoplay muted loop class="work-video">
-          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-mtvvid.mp4" type="video/mp4">
-        </video>
+    <a href="<?php echo get_site_url(); ?>/work/mtv">
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-mtvvid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="work-video--textarea">
+          <p class="sm-cap"><span>MTV</span></p>
+          <h3>Wild 'N Out Content Creation</h3>
+          <a href="<?php echo get_site_url(); ?>/work/mtv"><button class="work-video--btn">details</button></a>
+        </div>
       </div>
-      <div class="work-video--textarea">
-        <p class="sm-cap"><span>MTV</span></p>
-        <h3>Wild 'N Out Content Creation</h3>
-        <a href="<?php echo get_site_url(); ?>/work/mtv"><button class="work-video--btn">details</button></a>
+    </a>
+    <a href="<?php echo get_site_url(); ?>/work/immortals">
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-immortalsvid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="work-video--textarea">
+          <p class="sm-cap"><span>Immortals</span></p>
+          <h3>LA Valiant Social Event Promotion</h3>
+          <a href="<?php echo get_site_url(); ?>/work/immortals"><button class="work-video--btn">details</button></a>
+        </div>
       </div>
-    </div>
-    <div class="work-video--item">
-      <div class="work-video--thumbnail">
-        <video autoplay muted loop class="work-video">
-          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-immortalsvid.mp4" type="video/mp4">
-        </video>
+    </a>
+    <a href="<?php echo get_site_url(); ?>/work/fathom-events">
+      <div class="work-video--item">
+        <div class="work-video--thumbnail">
+          <video autoplay muted loop class="work-video">
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-fathomvid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="work-video--textarea">
+          <p class="sm-cap"><span>Fathom Events</span></p>
+          <h3>Batman Content Creation</h3>
+          <a href="<?php echo get_site_url(); ?>/work/fathom-events"><button class="work-video--btn">details</button></a>
+        </div>
       </div>
-      <div class="work-video--textarea">
-        <p class="sm-cap"><span>Immortals</span></p>
-        <h3>LA Valiant Social Event Promotion</h3>
-        <a href="<?php echo get_site_url(); ?>/work/immortals"><button class="work-video--btn">details</button></a>
-      </div>
-    </div>
-    <div class="work-video--item">
-      <div class="work-video--thumbnail">
-        <video autoplay muted loop class="work-video">
-          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-fathomvid.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="work-video--textarea">
-        <p class="sm-cap"><span>Fathom Events</span></p>
-        <h3>Batman Content Creation</h3>
-        <a href="<?php echo get_site_url(); ?>/work/fathom-events"><button class="work-video--btn">details</button></a>
-      </div>
-    </div>
+    </a>
   </div>
   <div class="work-container--main-btn">
     <a href="<?php echo get_site_url(); ?>/work"><button class="btn-white">view all work</button></a>
@@ -109,7 +116,7 @@
           <h3>other</h3>
         </div>
         <div class="services--item-overlay overlay-bg4">
-          <p>Social Management, Influencer Marketing, Branded Integrations, Digital Series Development, Linear/AVOD Programming</p>
+          <p>Social Management, Paid Media, Influencer Marketing, Branded Integrations, Digital Series Development</p>
         </div>
       </a>
     </div>
