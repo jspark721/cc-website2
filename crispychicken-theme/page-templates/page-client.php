@@ -58,6 +58,9 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 ?>
 
-
+<section class="about--cta-container">
+  <h1>get in touch!</h1>
+  <a href="<?php echo get_site_url(); ?>/contact"><button class="btn-white">contact</button></a>
+</section>
 
 <?php get_footer(); ?>
