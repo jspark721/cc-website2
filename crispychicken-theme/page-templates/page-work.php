@@ -89,8 +89,7 @@ get_header();
 
 <section class="about--cta-container">
   <h1>get in touch!</h1>
-  <button class="btn-white">contact us</button>
+  <a href="<?php echo get_site_url(); ?>/contact"><button class="btn-white">contact</button></a>
 </section>
-
 
 <?php get_footer(); ?>
