@@ -1267,9 +1267,6 @@ footer {
 @media screen and (max-width: 965px) {
   .page--client-hero-container2 {
     text-align: center; }
-  .page--client-desc2 {
-    height: auto;
-    min-height: 1200px; }
   .client--desc-iphone {
     position: absolute;
     width: 100%;

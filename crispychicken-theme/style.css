@@ -1290,9 +1290,6 @@ footer {
 @media screen and (max-width: 965px) {
   .page--client-hero-container2 {
     text-align: center; }
-  .page--client-desc2 {
-    height: auto;
-    min-height: 1200px; }
   .client--desc-iphone {
     position: absolute;
     width: 100%;
@@ -1304,9 +1301,7 @@ footer {
     height: 700px; }
   .client--desc-textarea2 {
     width: 80%;
-    height: 100%;
-    position: absolute;
-    top: 450px;
+    margin-top: 750px;
     align-items: center;
     text-align: center; }
   .client-video--grid {
