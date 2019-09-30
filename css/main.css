@@ -742,10 +742,9 @@ footer {
 
 .page--hero-textarea {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 40%;
-  max-width: 1100px;
-  transition: all 2s ease; }
+  max-width: 1100px; }
 
 .page--title h1 {
   font-size: 5em;
@@ -777,14 +776,16 @@ footer {
   background: #d44206;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 55px 0; }
+  padding: 35px 0; }
   .page--about-container p {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 700;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 5%; }
+
+.page--about-text {
+  max-width: 1100px;
+  width: 80%; }
 
 .page--about-grid-container {
   position: relative;
@@ -944,7 +945,9 @@ footer {
 .page--client-hero-container2 {
   position: relative;
   height: 350px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
   .page--client-hero-container2 .page--hero-textarea {
     top: 45%; }
   .page--client-hero-container2 .page--title h1 {
@@ -1234,11 +1237,18 @@ footer {
   .page--client-item {
     height: 350px; }
   .page--about-grid-container h3 {
-    font-size: 3.5em; }
+    font-size: 2em; }
   .grid-item--text {
     font-size: 1.2em; }
+  .about--grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .about--grid-item2 {
+    grid-area: 1;
+    align-items: flex-end; }
+    .about--grid-item2 .grid-item--text {
+      text-align: right; }
   .about--grid-item1, .about--grid-item2, .about--grid-item3, .about--grid-item4, .about--grid-item5, .about--grid-item6 {
-    min-height: 500px; } }
+    min-height: 350px; } }
 
 @media screen and (max-width: 1200px) {
   #hero-video {
@@ -1366,13 +1376,19 @@ footer {
   .about--grid-item4 {
     grid-area: 3; }
   .about--grid-item1, .about--grid-item2, .about--grid-item3, .about--grid-item4, .about--grid-item5, .about--grid-item6 {
-    min-height: 250px; }
+    min-height: 250px;
+    padding: 15%; }
   .page--title h1 {
     font-size: 4em; }
   .page--about-container h2 {
     font-size: 1.7em; }
   .page--work-hero-container .page--title h1 {
-    font-size: 5em; } }
+    font-size: 5em; }
+  .page--hero-textarea {
+    width: 70%; }
+  .page--about-text p {
+    font-size: 1.2em;
+    margin: 0 3% 10% 5%; } }
 
 @media screen and (max-width: 600px) {
   .about-container {
@@ -1424,6 +1440,13 @@ footer {
     background-attachment: scroll; }
   .page--about-container h2 {
     font-size: 1.7em; }
+  .page--services-textarea {
+    width: 70%; }
+  .page--services-grid-container .page--work-grid {
+    width: 65%;
+    grid-template-columns: 1fr; }
+  .page--services-grid-container .page--client-item {
+    height: 220px; }
   .client-video--grid {
     top: 18%; }
   .client-video--item {

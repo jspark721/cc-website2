@@ -698,10 +698,9 @@ footer {
 
 .page--hero-textarea {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 40%;
   max-width: 1100px;
-  transition: all 2s ease;
 }
 
 .page--title {
@@ -740,19 +739,21 @@ footer {
   background: $redorange;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 55px 0;
+  padding: 35px 0;
   p {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 700;
     color: $white;
+    margin-bottom: 5%;
     // span {
     //   background: $white;
     //   color: $redorange;
     // }
   }
+}
+.page--about-text {
+  max-width: 1100px;
+  width: 80%;
 }
 
 .page--about-grid-container {
@@ -948,6 +949,8 @@ footer {
   position: relative;
   height: 350px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   .page--hero-textarea {
     top: 45%;
   }
@@ -1326,14 +1329,24 @@ footer {
   }
   .page--about-grid-container {
     h3 {
-      font-size: 3.5em;
+      font-size: 2em;
     }
   }
   .grid-item--text {
     font-size: 1.2em;
   }
+  .about--grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .about--grid-item2 {
+    grid-area: 1;
+    align-items: flex-end;
+    .grid-item--text {
+      text-align: right;
+    }
+  }
   .about--grid-item1, .about--grid-item2, .about--grid-item3, .about--grid-item4, .about--grid-item5, .about--grid-item6 {
-    min-height: 500px;
+    min-height: 350px;
   }
 }
 
@@ -1530,6 +1543,7 @@ footer {
   }
   .about--grid-item1, .about--grid-item2, .about--grid-item3, .about--grid-item4, .about--grid-item5, .about--grid-item6 {
     min-height: 250px;
+    padding: 15%;
   }
   .page--title {
     h1 {
@@ -1546,6 +1560,15 @@ footer {
       h1 {
         font-size: 5em;
       }
+    }
+  }
+  .page--hero-textarea {
+    width: 70%;
+  }
+  .page--about-text {
+    p {
+      font-size: 1.2em;
+      margin: 0 3% 10% 5%;
     }
   }
 }
@@ -1632,6 +1655,18 @@ footer {
   .page--about-container {
     h2 {
       font-size: 1.7em;
+    }
+  }
+  .page--services-textarea {
+    width: 70%;
+  }
+  .page--services-grid-container {
+    .page--work-grid {
+      width: 65%;
+      grid-template-columns: 1fr;
+    }
+    .page--client-item {
+      height: 220px;
     }
   }
   .client-video--grid {

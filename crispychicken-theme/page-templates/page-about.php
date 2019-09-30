@@ -16,15 +16,17 @@ get_header();
   </div>
 </section>
 <section class="page--about-container">
-  <?php
-    // Start the loop
-    if(have_posts()) {
-      while(have_posts()) {
-        the_post();
-        the_content();
+  <div class="page--about-text">
+    <?php
+      // Start the loop
+      if(have_posts()) {
+        while(have_posts()) {
+          the_post();
+          the_content();
+        }
       }
-    }
-  ?>
+    ?>
+  </div>
 </section>
 
 <section class="page--about-grid-container">
