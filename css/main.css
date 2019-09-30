@@ -938,7 +938,7 @@ footer {
 /*client page*/
 .page--client-hero-container2 {
   position: relative;
-  height: 50vh;
+  height: 350px;
   width: 100%; }
   .page--client-hero-container2 .page--hero-textarea {
     top: 45%; }

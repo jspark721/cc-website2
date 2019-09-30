@@ -10,7 +10,7 @@
   <div class="hero-video--overlay"></div>
   <div id="hero" class="hero--textarea">
     <img id="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
-    <img id="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-mobile.png" alt="crispy chicken mobile logo" />
+    <img id="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-mobile-o.png" alt="crispy chicken mobile logo" />
   </div>
   <a class="swipe-up" href="#work">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/SwipeUp.gif" alt="swipe up sticker" />
