@@ -14,7 +14,7 @@
       <li><a href="http://instagram.com/crispychickenco"  target="_blank"><i class="fab fa-instagram"></i></a></li>
     </ul>
     <p class="sm-cap">© copyright crispy chicken 2019. all rights reserved |
-    web design + development by <a class="a-sm" href="https://julieloves.co">Julie Park</a></p>
+    web design + development by <a class="a-sm" href="https://juliepark.me">Julie Park</a></p>
   </div>
 </footer>
 
