@@ -1322,9 +1322,9 @@ footer {
 @media screen and (max-width: 875px) {
   .nav--main-list li {
     font-size: 3em;
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
   #services--dropdown li {
-    padding-right: 10px; }
+    padding-right: 35px; }
   .work-video--thumbnail {
     height: 45%; }
   .work-video--textarea {
@@ -1395,7 +1395,7 @@ footer {
     margin-left: 0; }
     #services--dropdown li {
       display: block;
-      margin-top: 5px; } }
+      margin: 5px 0; } }
 
 @media screen and (max-width: 670px) {
   .about--grid {
@@ -1461,7 +1461,7 @@ footer {
     margin-top: 10%;}
   .hero-container {
     background: #F9F7F4;
-    height: 50vh; }
+    height: 70vh; }
   .swipe-up {
     display: none; }
   .about-container {
