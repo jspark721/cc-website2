@@ -691,6 +691,7 @@ footer {
   background-color: #FDFDFD;
   height: 60vh;
   width: 100%;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -699,7 +700,7 @@ footer {
 .page--hero-textarea {
   position: relative;
   width: 80%;
-  height: 40%;
+  height: 50%;
   max-width: 1100px;
 }
 
@@ -1373,6 +1374,11 @@ footer {
 @media screen and (max-width: 965px) {
   .page--client-hero-container2 {
     text-align: center;
+    .page--title {
+      h1 {
+        font-size: 4em;
+      }
+    }
   }
   .client--desc-iphone {
     position: absolute;
@@ -1413,6 +1419,7 @@ footer {
   .nav--main-list {
     li {
       font-size: 3em;
+      margin-bottom: 10px;
     }
   }
   #services--dropdown {
@@ -1624,6 +1631,9 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
+  body {
+    overflow-x: hidden;
+  }
   #hero-video, .hero-video--overlay, #video-btn {
     display: none;
   }
@@ -1663,6 +1673,23 @@ footer {
     }
     .page--client-item {
       height: 220px;
+    }
+  }
+  .page--client-hero-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    .page--hero-textarea {
+      height: 100%;
+    }
+    .page--title {
+      h1 {
+        font-size: 3em;
+      }
+    }
+    .page--title-sm {
+      margin: 0 0 10px 0;
     }
   }
   .client-video--grid {
