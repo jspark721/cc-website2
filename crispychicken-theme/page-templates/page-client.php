@@ -48,7 +48,7 @@ while ( have_posts() ) :
     get_template_part( 'partials/client-jukin');
   } elseif ( is_page('leatherhead')) {
     get_template_part( 'partials/client-leatherhead');
-  } elseif ( is_page('arielle-vandenberg')) {
+  } elseif ( is_page('arielle')) {
     get_template_part( 'partials/client-arielle');
   } else {
     echo '<div class="work-container--main-btn">
