@@ -1665,6 +1665,14 @@ footer {
   }
   .page--services-textarea {
     width: 70%;
+    .page--title {
+      h1 {
+        font-size: 3.5em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
   }
   .page--services-grid-container {
     .page--work-grid {
@@ -1709,6 +1717,22 @@ footer {
   #hero-work-video {
     display: none;
   }
+  #lol-project3 {
+    background-image: url("assets/lol-project3.jpg");
+    background-position: center;
+    background-size: cover;
+    video {
+      display: none;
+    }
+  }
+  #lol-project2 {
+    background-image: url("assets/lol-project2.jpg");
+    background-position: center;
+    background-size: cover;
+    video {
+      display: none;
+    }
+  }
   .page--work-hero-container {
     background: $dark;
   }
@@ -1720,5 +1744,8 @@ footer {
     .client-logo-sm {
       width: 35%;
     }
+  }
+  .page--client-desc2 {
+    margin-top: 5%;
   }
 }

@@ -1445,6 +1445,10 @@ footer {
     font-size: 1.7em; }
   .page--services-textarea {
     width: 70%; }
+    .page--services-textarea .page--title h1 {
+      font-size: 3.5em; }
+    .page--services-textarea .page--title p {
+      font-size: 1.2em; }
   .page--services-grid-container .page--work-grid {
     width: 65%;
     grid-template-columns: 1fr; }
@@ -1473,6 +1477,18 @@ footer {
     height: 50%; }
   #hero-work-video {
     display: none; }
+  #lol-project3 {
+    background-image: url("assets/lol-project3.jpg");
+    background-position: center;
+    background-size: cover; }
+    #lol-project3 video {
+      display: none; }
+  #lol-project2 {
+    background-image: url("assets/lol-project2.jpg");
+    background-position: center;
+    background-size: cover; }
+    #lol-project2 video {
+      display: none; }
   .page--work-hero-container {
     background: #424242; }
   .page--work-grid-container {
@@ -1480,4 +1496,6 @@ footer {
     .page--work-grid-container .page--work-grid {
       grid-template-columns: 1fr; }
     .page--work-grid-container .client-logo-sm {
-      width: 35%; } }
+      width: 35%; }
+  .page--client-desc2 {
+    margin-top: 5%; } }

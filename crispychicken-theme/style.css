@@ -463,8 +463,7 @@ button {
       background: #157070;
       color: #ffffff; }
   .work-container--main-btn a {
-    margin-bottom: 7%;
-    margin-top: 5%; }
+    margin-bottom: 5%; }
 
 .services-container {
   width: 100%;
@@ -751,17 +750,16 @@ footer {
 .page--hero-container {
   position: relative;
   background-color: #FDFDFD;
-  height: 60vh;
   width: 100%;
-  min-height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-end; }
 
 .page--hero-textarea {
   position: relative;
   width: 80%;
-  height: 50%;
+  height: 67%;
   max-width: 1100px; }
 
 .page--title h1 {
@@ -1040,7 +1038,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  margin: 10% 8%; }
+  margin: 10% 8% 4% 8%; }
 
 .client-video--item {
   position: relative;
@@ -1416,12 +1414,14 @@ footer {
   .page--work-hero-container .page--title h1 {
     font-size: 5em; }
   .page--hero-textarea {
-    width: 70%; }
+    width: 75%; }
   .page--about-text p {
     font-size: 1.2em;
     margin: 0 3% 10% 5%; } }
 
 @media screen and (max-width: 600px) {
+  .page--hero-textarea {
+    margin-bottom: 5%; }
   .about-container {
     height: 770px;
     min-height: 750px; }
@@ -1430,9 +1430,9 @@ footer {
   .services--header h1 {
     font-size: 3em; }
   .services--header h2 {
-    font-size: 1.7em; }
+    font-size: 1.5em; }
   .about--textarea h1 {
-    font-size: 3em; }
+    font-size: 2.5em; }
   .about--textarea h2 {
     font-size: 1.3em; }
   .about--bigtitle {
@@ -1461,18 +1461,22 @@ footer {
     margin-top: 10%;}
   .hero-container {
     background: #F9F7F4;
-    height: 70vh; }
-  .swipe-up {
-    display: none; }
+    height: 95vh; }
   .about-container {
     height: 830px;
     min-height: 820px; }
   .contact-container {
     background-attachment: scroll; }
+  .page--hero-container {
+    height: 450px;}
   .page--about-container h2 {
     font-size: 1.7em; }
   .page--services-textarea {
     width: 70%; }
+    .page--services-textarea .page--title h1 {
+      font-size: 3em; }
+    .page--services-textarea .page--title p {
+      font-size: 1.2em; }
   .page--services-grid-container .page--work-grid {
     width: 65%;
     grid-template-columns: 1fr; }
@@ -1501,6 +1505,18 @@ footer {
     height: 50%; }
   #hero-work-video {
     display: none; }
+  #lol-project2 {
+    background-image: url("assets/lol-project2.jpg");
+    background-position: center;
+    background-size: cover; }
+    #lol-project2 video {
+      display: none; }
+  #lol-project3 {
+    background-image: url("assets/lol-project3.jpg");
+    background-position: center;
+    background-size: cover; }
+    #lol-project3 video {
+      display: none; }
   .page--work-hero-container {
     background: #424242; }
   .page--work-grid-container {
@@ -1508,4 +1524,6 @@ footer {
     .page--work-grid-container .page--work-grid {
       grid-template-columns: 1fr; }
     .page--work-grid-container .client-logo-sm {
-      width: 35%; } }
+      width: 35%; }
+  .page--client-desc2 {
+    margin-top: 5%; } }
