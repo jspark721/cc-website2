@@ -7,7 +7,7 @@ get_header();
   <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-sm-orange.png" alt="crispy chicken small logo"/></a>
 </div>
 
-<img class="services--hero-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/<?php echo get_the_title(); ?>.jpg" />
+<?php the_post_thumbnail('full', array('class' => 'services--hero-image')); ?>
 <section class="page--services-container">
   <div class="page--services-textarea">
     <p class="page--title-sm"><span>services</span></p>
