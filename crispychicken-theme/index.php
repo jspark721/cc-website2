@@ -17,31 +17,36 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="logo">
+  <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-sm-orange.png" alt="crispy chicken small logo"/></a>
+</div>
 
-		<?php
-		if ( have_posts() ) {
+<section class="page--client-hero-container2">
+  <div class="page--hero-textarea">
+    <div class="page--title">
+      <p class="page--title-sm"><span>client</span></p>
+      <h1><?php echo get_the_title(); ?><span>.</span></h1>
+    </div>
+  </div>
+</section>
 
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( 'template-parts/content/content' );
-			}
+<?php
+  // Start the loop
+  if(have_posts()) {
+    while(have_posts()) {
+      the_post();
+      the_content();
+    }
+  }
+?>
+<div class="work-container--main-btn">
+  <a href="<?php echo get_site_url(); ?>/work"><button class="btn-light">back to all clients</button></a>
+</div>
 
-			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
-
-		} else {
-
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
-
-		}
-		?>
-
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+<section class="about--cta-container">
+  <h1>get in touch!</h1>
+  <a href="<?php echo get_site_url(); ?>/contact"><button class="btn-white">contact</button></a>
+</section>
 
 <?php
 get_footer();
