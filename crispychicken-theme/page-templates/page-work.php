@@ -78,7 +78,7 @@ get_header();
       </a>
     </div>
     <div class="page--client-item">
-      <a href="<?php echo get_site_url(); ?>/work/arielle-vandenberg">
+      <a href="<?php echo get_site_url(); ?>/work/arielle">
         <div class="item-text">
           <img class="client-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/arielle.png" />
         </div>

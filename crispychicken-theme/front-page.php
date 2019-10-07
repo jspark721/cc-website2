@@ -70,7 +70,7 @@
     </a>
   </div>
   <div class="work-container--main-btn">
-    <a href="<?php echo get_site_url(); ?>/work"><button class="btn-white">view all work</button></a>
+    <a class="a-margin-top" href="<?php echo get_site_url(); ?>/work"><button class="btn-white">view all work</button></a>
   </div>
 </section>
 
@@ -128,11 +128,7 @@
   <div class="about--textarea">
     <h1>why <br>crispy chicken<span>?</span></h1>
     <div class="hero-title-line"></div>
-    <h2>100% Organic. Social media is all we do. It’s never an after-thought.</h2>
-    <br>
-    <h2>We’ve built online communities from the ground up, produced content engaged by billions, while creating new revenue streams in the process.</h2>
-    <br>
-    <h2>We pride ourselves on being an extension of your team by providing incredible value on a fair budget.</h2>
+    <?php echo get_post_field('post_content', 310); ?>
     <div class="hero-title-line"></div>
     <h3 class="about--bigtitle">ALL WE DO IS SOCIAL<span>.</span></h3>
   </div>

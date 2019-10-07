@@ -37,8 +37,8 @@ function crispychicken_scripts() {
 add_action('wp_enqueue_scripts', 'crispychicken_scripts');
 
 function wpb_adding_scripts() {
-  wp_register_script('customjs', get_template_directory_uri() . '/js/script.js', array('jquery'),'1.1', true);
-  wp_enqueue_script('customjs');
+wp_register_script('customjs', get_template_directory_uri() . '/js/script.js', array('jquery'),'1.1', true);
+wp_enqueue_script('customjs');
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
