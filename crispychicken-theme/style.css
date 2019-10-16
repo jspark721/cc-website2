@@ -961,7 +961,7 @@ footer {
   width: 75%; }
 
 .client-logo-sm {
-  width: 50%; }
+  width: 70%; }
 
 /*client page*/
 .page--client-hero-container2 {
@@ -1605,7 +1605,7 @@ footer {
     .page--work-grid-container .page--work-grid {
       grid-template-columns: 1fr; }
     .page--work-grid-container .client-logo-sm {
-      width: 35%; }
+      width: 55%; }
   .page--client-desc2 {
     margin-top: 5%; }
   .single-product-container {
