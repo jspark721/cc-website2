@@ -14,7 +14,7 @@
   <div class="page--hero-textarea">
     <div class="page--title">
       <h1><?php echo get_the_title( $post = 312 ); ?><span>.</span></h1>
-      <?php echo get_post_field('post_content', get_post(16)); ?>
+      <p class="p-white">Crispy Chicken has a diverse client portfolio ranging from small businesses to media giants within various industries. Click on a logo to learn more about our projects.</p>
     </div>
   </div>
 </section>
