@@ -234,6 +234,57 @@ button {
   }
 }
 
+.fixed-contact {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 10;
+  width: 500px;
+  height: 70px;
+  display: flex;
+}
+#contact-btn {
+  background-color: $white;
+  padding: 13px;
+  position: absolute;
+  bottom: 18px;
+  left: 74px;
+  border: none;
+  border-radius: 1px;
+  z-index: 3;
+  box-shadow: 2px 2px 5px rgba($black, .3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  transition: $ease;
+  &:hover {
+    transition: $ease;
+    color: $orange;
+    font-weight: 800;
+    font-size: 0.87rem;
+  }
+}
+.contact-btn-triangle {
+  position: absolute;
+  z-index: 5;
+  left: 63px;
+  bottom: 24px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 20px solid $white;
+  border-bottom: 15px solid transparent;
+}
+
+.blaze-logo {
+  width: 70px;
+  img {
+    width: 100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+
 .work-container {
   position: relative;
   width: 100%;

@@ -354,6 +354,53 @@ button {
     width: 120px;
     z-index: 20; }
 
+.fixed-contact {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 10;
+  width: 500px;
+  height: 70px;
+  display: flex; }
+
+#contact-btn {
+  background-color: #ffffff;
+  padding: 13px;
+  position: absolute;
+  bottom: 18px;
+  left: 74px;
+  border: none;
+  border-radius: 1px;
+  z-index: 3;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease; }
+  #contact-btn:hover {
+    transition: all 0.3s ease;
+    color: #f97304;
+    font-weight: 800;
+    font-size: 0.87rem; }
+
+.contact-btn-triangle {
+  position: absolute;
+  z-index: 5;
+  left: 63px;
+  bottom: 24px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #ffffff;
+  border-bottom: 15px solid transparent; }
+
+.blaze-logo {
+  width: 70px; }
+  .blaze-logo img {
+    width: 100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+
 .work-container {
   position: relative;
   width: 100%;
