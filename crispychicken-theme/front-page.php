@@ -9,7 +9,7 @@
   </video>
   <div class="hero-video--overlay"></div>
   <div id="hero" class="hero--textarea">
-    <img id="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-main-o.png" alt="crispy chicken main logo" />
+    <img id="logo-main" src="/wp-content/uploads/cc-logo-stacked-o.png" alt="crispy chicken logo" />
     <img id="logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cc-logo-mobile-o.png" alt="crispy chicken mobile logo" />
   </div>
   <a class="swipe-up" href="#work">
@@ -17,6 +17,14 @@
   </a>
   <!-- Use a button to pause/play the video with JavaScript -->
   <button id="video-btn" onclick="playPause()">pause <i class="fas fa-pause"></i></button>
+    <div class="fixed-contact">
+      <div class="blaze-logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/blaze-logo.png" />
+      </div>
+      <a href="/contact"><div id="contact-btn">contact us!</div>
+      <div class="contact-btn-triangle"></div>
+      </a>
+    </div>
 </section>
 
 <!-- <section class="break-container"></section> -->
@@ -26,44 +34,45 @@
     <h1>a taste of our work</h1>
   </div>
   <div class="work-video--grid">
-    <a href="<?php echo get_site_url(); ?>/work/mtv">
+    <a href="<?php echo get_site_url(); ?>/vh1">
       <div class="work-video--item">
         <div class="work-video--thumbnail">
-          <video autoplay muted loop class="work-video">
-            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-mtvvid.mp4" type="video/mp4">
+          <video autoplay muted loop class="work-video-full-height">
+            <source src="/wp-content/uploads/CC_Homepage-VH1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="work-video--textarea">
-          <p class="sm-cap"><span>MTV</span></p>
-          <h3>Wild 'N Out Content Creation</h3>
+          <p class="sm-cap"><span>VH1</span></p>
+          <h3>Content Creation</h3>
           <button class="work-video--btn">details</button>
         </div>
       </div>
     </a>
-    <a href="<?php echo get_site_url(); ?>/work/immortals">
+
+    <a href="<?php echo get_site_url(); ?>/tiny-meat-gang">
       <div class="work-video--item">
         <div class="work-video--thumbnail">
-          <video autoplay muted loop class="work-video">
-            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-immortalsvid.mp4" type="video/mp4">
+          <video autoplay muted loop class="work-video-full-height">
+            <source src="/wp-content/uploads/CC_Homepage_TMG2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="work-video--textarea">
-          <p class="sm-cap"><span>Immortals</span></p>
-          <h3>LA Valiant Social Event Promotion</h3>
+          <p class="sm-cap"><span>Tiny Meat Gang</span></p>
+          <h3>Social Management</h3>
           <button class="work-video--btn">details</button>
         </div>
       </div>
     </a>
-    <a href="<?php echo get_site_url(); ?>/work/fathom-events">
+	<a href="<?php echo get_site_url(); ?>/cameo">
       <div class="work-video--item">
         <div class="work-video--thumbnail">
           <video autoplay muted loop class="work-video">
-            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/work-fathomvid.mp4" type="video/mp4">
+            <source src="/wp-content/uploads/CC_Homepage_Cameo.mp4" type="video/mp4">
           </video>
         </div>
         <div class="work-video--textarea">
-          <p class="sm-cap"><span>Fathom Events</span></p>
-          <h3>Batman Content Creation</h3>
+          <p class="sm-cap"><span>Cameo</span></p>
+          <h3>Paid Media Ads</h3>
           <button class="work-video--btn">details</button>
         </div>
       </div>
@@ -101,9 +110,9 @@
       </a>
     </div>
     <div class="services--item item3">
-      <a href="<?php echo get_site_url(); ?>/service/audience-development">
+      <a href="<?php echo get_site_url(); ?>/service/social-management">
         <div class="item-text">
-          <h3>audience <br>development</h3>
+          <h3>social <br>management</h3>
         </div>
         <div class="services--item-overlay overlay-bg3">
           <p>Cultivate an engaged community</p>
@@ -116,7 +125,7 @@
           <h3>other</h3>
         </div>
         <div class="services--item-overlay overlay-bg4">
-          <p>Social Management, Paid Media, Influencer Marketing, Branded Integrations, Digital Series Development</p>
+          <p>Paid Media, Branded Integrations, <br>Digital Series Development & More</p>
         </div>
       </a>
     </div>
