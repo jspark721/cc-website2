@@ -55,8 +55,14 @@ setTimeout(function() {
 
 let iphoneBtn = document.getElementById("pauseBtn");
 let iphoneVid = document.getElementById("iphone-video");
+
+function unmuteIphone() {
+  console.log('iphone clicked')
+  iphoneVid.muted = false;
+}
 // pause and play the video
 function pauseIphone() {
+//   iphoneVid.muted = false;
   if (iphoneVid.paused) {
     iphoneVid.play();
     iphoneBtn.innerHTML = "<i class='fas fa-pause'></i>";
