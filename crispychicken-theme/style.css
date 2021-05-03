@@ -487,10 +487,10 @@ button:hover {
   align-items: center;
   max-width: 1000px;
   margin: auto;
-  padding: 2em 3em 5em 3em;
+  padding: 1em 2em;
 }
 .press-item {
-  width: 200px;
+  width: 140px;
   padding: 2em;
   transition: all 0.3s ease;
 }
@@ -2045,6 +2045,9 @@ footer {
   .hero-container {
     background: #f9f7f4;
     height: 95vh;
+  }
+  .press-logos {
+    flex-direction: column;
   }
   .about-container {
     height: 830px;
