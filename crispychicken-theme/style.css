@@ -481,6 +481,10 @@ button:hover {
   position: relative;
 }
 
+.press-container .work-container--title {
+  padding-top: 20px;
+}
+
 .press-logos {
   display: flex;
   justify-content: space-around;
@@ -490,7 +494,7 @@ button:hover {
   padding: 1em 2em;
 }
 .press-item {
-  width: 140px;
+  width: 155px;
   padding: 2em;
   transition: all 0.3s ease;
 }
