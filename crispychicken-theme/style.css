@@ -1296,6 +1296,16 @@ footer {
   height: 100%;
   width: 380px;
 }
+.client--desc-iphone:before {
+  content: "click to play sound";
+  position: absolute;
+  top: -15px;
+  left: 113px;
+  font-size: .8em;
+  color: #f97304;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
 
 #iphone-video {
   max-height: 700px;
@@ -1792,6 +1802,9 @@ footer {
   }
   .page--client-hero-container2 .page--title h1 {
     font-size: 4em;
+  }
+  .client--desc-iphone:before {
+	left:0;
   }
   .client--desc-iphone {
     position: absolute;
