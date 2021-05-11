@@ -29,6 +29,30 @@
 
 <!-- <section class="break-container"></section> -->
 <div id="work"></a>
+<div class="press-container">
+      <div class="work-container--title">
+        <h1>As Seen On</h1>
+      </div>
+      <div class="press-logos">
+        <a
+          target="_blank"
+          href="https://www.forbes.com/sites/forbestheculture/2021/12/28/bipoc-businesses-that-thrived-in-2020/?sh=12d0a4f227c1"
+        >
+          <div id="forbes-logo" class="press-item">
+            <img src="https://crispychicken.co/wp-content/uploads/forbes-logo-white.png" alt="forbes logo" />
+          </div>
+        </a>
+        <a
+          target="_blank"
+          href="https://cheddar.com/media/crispy-chicken-helps-content-creators-amid-pandemic"
+        >
+          <div class="press-item">
+            <img src="https://crispychicken.co/wp-content/uploads/cheddar-logo-white.png" alt="cheddar logo" />
+          </div>
+        </a>
+      </div>
+    </div>
+
 <section class="work-container">
   <div class="work-container--title">
     <h1>a taste of our work</h1>
@@ -79,7 +103,45 @@
     </a>
   </div>
   <div class="work-container--main-btn">
-    <a class="a-margin-top" href="<?php echo get_site_url(); ?>/work"><button class="btn-white">view all work</button></a>
+    <a class="a-margin-top" href="<?php echo get_site_url(); ?>/work"><button class="btn-white">view more work</button></a>
+  </div>
+  <div class="home-logos-grid">
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/MTV.png" />	
+	</div>  
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/vh1.png" />	
+	</div>   
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/Paramount-Network.png" />	
+	</div> 
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/TV-land.png" />	
+	</div> 
+    <div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/LOL.png" />	
+	</div> 
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/TMG.png" />	
+	</div> 
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/cameo.png" />	
+	</div>  
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/collab.png" />	
+	</div>   
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/cmt.png" />	
+	</div> 
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/VidCon.png" />	
+	</div> 
+    <div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/IGC.png" />	
+	</div> 
+	<div class="home-logos-grid-item">
+		<img class="home-logos" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/Fathom-Events.png" />	
+	</div> 
   </div>
 </section>
 
