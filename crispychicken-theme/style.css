@@ -493,8 +493,11 @@ button:hover {
   margin: auto;
   padding: 1em 2em;
 }
+#forbes-logo {
+	width: 210px;
+}
 .press-item {
-  width: 155px;
+  width: 245px;
   padding: 2em;
   transition: all 0.3s ease;
 }
@@ -638,7 +641,22 @@ button:hover {
   color: #ffffff;
 }
 .work-container--main-btn a {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+}
+.home-logos-grid {
+  width: 95vw;
+  padding: 0 1em 2em 2em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-left: 2.3em;
+  overflow: hidden;
+  margin-bottom: 4%;
+}
+.home-logos-grid-item {
+  width: 12vw;
+}
+.home-logos {
+  width: 100%;
 }
 
 .services-container {
@@ -1302,7 +1320,7 @@ footer {
   top: -15px;
   left: 113px;
   font-size: .8em;
-  color: #f97304;
+  color: #157070;
   text-transform: uppercase;
   letter-spacing: .3px;
 }
@@ -1940,6 +1958,9 @@ footer {
   .page--contact-scroll {
     width: 100%;
     position: relative;
+  }
+  .home-logos-grid {
+	display: none;
   }
 }
 
